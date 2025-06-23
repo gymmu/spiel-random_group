@@ -10,33 +10,46 @@
 
   <body>
     <main>
-      <h1>Unser Spiel</h1>
-      <div class="center margin-tb">
-        <a class="start-btn" href="game.html">Spiel starten</a>
-      </div>
-      <section>
-        <h2>Intro</h2>
-        Eine kurze Einführung in unser Spiel.
-      </section>
-      <section>
-        <h2>Spielprinzip</h2>
-        <div class="text-with-image">
-          <img src="img/rpg.png" />
-          <div class="text">Sammle die Blume und gehe in die Höhle.</div>
+      <div class="header">
+        <div class="effects-container">
+          <!-- mehrere Sternschnuppen -->
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <img src="ufo-removebg-preview.png" class="flying-alien" alt="Alien" />
+          <img src="ufo-removebg-preview.png" class="flying-alien2" alt="Alien" />
+
         </div>
-      </section>
-      <section>
-        <h2>Steuerung</h2>
-        <div class="controls-table">
-          <div class="controls-row">
-            <pre>Pfeiltasten</pre>
-            <span>In Richtung laufen</span>
+        <div class="header-content">
+          <h1>Alien Invasion</h1>
+          <div class="header-right">
+            <a class="button-90" href="game.html">Spiel starten</a>
+            <button class="question-button" onclick="scrollToIntro()">?</button>
           </div>
         </div>
-      </section>
-      <div class="center margin-tb">
-        <a class="start-btn" href="game.html">Spiel starten</a>
       </div>
-    </main>
+
+      <div class="intro" id="intro">
+        <h2>Eine kurze Einführung in unser Spiel</h2>
+        <h3>Spielprinzip</h3>
+        <p>In dem Spiel "Alien Invasion" wirst du in die Rolle des mutigen Bären versetzt. Verteidige dich gegen die bösen Aliens und versuche, so viele Level wie möglich zu bestreiten! Durch die Wurmlöcher wirst du zum nächsten Level teleportiert.</p>
+        <h3>Steuerung</h3>
+        <p>Benutze die WASD Tasten um dich fortzubewegen. Mit der Leertaste kannst du Schüsse abfeuern. Um Items aufzusammeln, benutze E, zum Fallenlassen Q.
+        </p>
+      </div>
   </body>
 </html>
+ <script>
+    function scrollToIntro() {
+      const intro = document.getElementById("intro");
+      intro.scrollIntoView({ behavior: "smooth" });
+
+      // Warte, bis Scroll abgeschlossen ist (~1s), dann Scroll wieder aktivieren
+      setTimeout(() => {
+        document.body.style.overflowY = "auto";
+      }, 1000);
+    }
+
+    // Scroll bei Seitenstart deaktivieren
+    //document.body.style.overflow = "hidden";
+  </script>
