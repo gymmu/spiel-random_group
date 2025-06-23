@@ -136,23 +136,15 @@ body {
   }
 }
 
-.flying-alien {
+
+.flying-alien,
+.flying-alien2 {
   position: absolute;
-  top: 20%;
   left: -100px;
   width: 80px;
-  animation: alien-fly 6s linear infinite;
   z-index: 2;
 }
 
-.flying-alien2 {
-  position: absolute;
-  top: 80%;
-  left: -100px;
-  width: 80px;
-  animation: alien-fly 12s linear infinite;
-  z-index: 2;
-}
 @keyframes alien-fly {
   0% {
     transform: translateX(0);
