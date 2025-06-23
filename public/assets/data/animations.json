@@ -1,0 +1,108 @@
+{
+  "anims": [
+    {
+      "key": "player_idle_down",
+      "type": "frame",
+      "defaultTextureKey": "player",
+      "frames": [{ "frame": 1 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "player_idle_up",
+      "type": "frame",
+      "defaultTextureKey": "player",
+      "frames": [{ "frame": 10 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "player_idle_right",
+      "type": "frame",
+      "defaultTextureKey": "player",
+      "frames": [{ "frame": 7 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "player_idle_left",
+      "type": "frame",
+      "defaultTextureKey": "player",
+      "frames": [{ "frame": 4 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "player_right",
+      "type": "frame",
+      "defaultTextureKey": "player",
+      "frames": [{ "frame": 6 }, { "frame": 7 }, { "frame": 8 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "player_left",
+      "type": "frame",
+      "defaultTextureKey": "player",
+      "frames": [{ "frame": 3 }, { "frame": 4 }, { "frame": 5 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "player_down",
+      "type": "frame",
+      "defaultTextureKey": "player",
+      "frames": [{ "frame": 0 }, { "frame": 1 }, { "frame": 2 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "player_up",
+      "type": "frame",
+      "defaultTextureKey": "player",
+      "frames": [{ "frame": 9 }, { "frame": 10 }, { "frame": 11 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc_idle",
+      "type": "frame",
+      "defaultTextureKey": "npc",
+      "frames": [{ "frame": 1 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc_right",
+      "type": "frame",
+      "defaultTextureKey": "npc",
+      "frames": [{ "frame": 6 }, { "frame": 7 }, { "frame": 8 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc_left",
+      "type": "frame",
+      "defaultTextureKey": "npc",
+      "frames": [{ "frame": 3 }, { "frame": 4 }, { "frame": 5 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc_down",
+      "type": "frame",
+      "defaultTextureKey": "npc",
+      "frames": [{ "frame": 0 }, { "frame": 1 }, { "frame": 2 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc_up",
+      "type": "frame",
+      "defaultTextureKey": "npc",
+      "frames": [{ "frame": 9 }, { "frame": 10 }, { "frame": 11 }],
+      "frameRate": 10,
+      "repeat": -1
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "frames": [
+    {
+      "filename": "mushroom",
+      "frame": { "x": 69, "y": 1, "w": 32, "h": 32 }
+    },
+    {
+      "filename": "flower",
+      "frame": { "x": 103, "y": 1, "w": 32, "h": 32 }
+    },
+    {
+      "filename": "stone",
+      "frame": { "x": 35, "y": 1, "w": 32, "h": 32 }
+    }
+  ]
+}

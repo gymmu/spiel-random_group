@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple Reveal.js Presentation</title>
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/reveal.js/dist/theme/dracula.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Dieser Abschnitt stellt eine Folie in Reveal.js dar -->
+        <section>
+          <h1>Demo Spiel</h1>
+          <!-- Mit der Klasse fragment, werden Teile erst nach und nach eingeblendet.-->
+          <p class="fragment">Cedric Geissmann</p>
+        </section>
+
+        <section>
+          <h3>Spielprinzip</h3>
+          <!-- Wenn sections verschachtelt sind, werden damit Unterfolien erstellt.-->
+          <section>
+            <h4>Jump'n'Run</h4>
+            <ul>
+              <li>Bis zum Ende des Levels kommen</li>
+              <li>Pilze machen Schaden</li>
+              <li>Blumen geben Lebenspunkte</li>
+            </ul>
+          </section>
+
+          <!-- Das hier ist dann die zweite Folie unter dem gleichen Titel.-->
+          <section>
+            <h4>RPG</h4>
+            <ul>
+              <li>Pilze machen Schaden</li>
+              <li>Blumen geben Lebenspunkte</li>
+              <li>Man muss eine Blume sammeln um das Spiel zu beenden</li>
+              <li>Höhle am Ende des Levels betreten</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Die letzte Folie soll einen direkten Link zum Spiel sein. -->
+        <section>
+          <a href="game.html" target="_blank">Demo</a>
+        </section>
+      </div>
+    </div>
+    <script type="module">
+      import Reveal from "reveal.js"
+      Reveal.initialize()
+    </script>
+  </body>
+</html>
