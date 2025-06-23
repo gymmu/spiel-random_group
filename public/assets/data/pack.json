@@ -19,7 +19,7 @@
       {
         "type": "spritesheet",
         "key": "npc",
-        "url": "npc.png",
+        "url": "npc2.png",
         "frameConfig": {
           "frameWidth": 32,
           "frameHeight": 32
