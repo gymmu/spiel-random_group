@@ -12,7 +12,6 @@ import InteractionObject from "../interactionObject"
 export function savePlayerState(scene, player) {
   scene.registry.set("playerState", {
     hp: player.hp,
-    inventory: player.inventory,
     keys: player.keys,
   })
 }
