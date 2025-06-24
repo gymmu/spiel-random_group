@@ -4,7 +4,7 @@ import Player from "./player.js"
 import Bullet from "./bullet.js"
 
 export default class NPC extends Phaser.Physics.Arcade.Sprite {
-  hp = 6
+  hp = 9
   maxHp = 10
   #speed = 100
   stepsLeft = 60
@@ -22,14 +22,14 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
     super(scene, x, y, skin)
     this.scene.add.existing(this)
     this.scene.physics.add.existing(this, false)
-    this.body.collideWorldBounds = false
+    this.body.collideWorldBounds = true
     this.setOrigin(0.5, 0.5)
     this.setSize(24, 24, false)
     this.setOffset(4, 8)
 
     this.skin = skin
     this.lastShotTime = 0
-    this.shootCooldown = 8000 // alle 2 Sekunden
+    this.shootCooldown = 8000 // alle 8 Sekunden
   }
 
   set speed(value) {
@@ -96,7 +96,7 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
           player.x,
           player.y,
         )
-        this.scene.projectilesGroup.add(bullet)
+        this.scene.bulletGroup.add(bullet)
 
         this.lastShotTime = this.scene.time.now
       }
