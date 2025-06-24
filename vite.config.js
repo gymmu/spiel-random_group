@@ -25,5 +25,5 @@ export default defineConfig({
     },
   },
   // TODO: Das hier muss angepasst werden!!!
-  base: "/phaser-playground/",
+  base: "/spiel-random_group/",
 })
