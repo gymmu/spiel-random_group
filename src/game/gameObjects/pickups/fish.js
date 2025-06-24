@@ -3,13 +3,13 @@ import { registerGameObject } from "../registry"
 
 export default class Flower extends StaticObject {
   constructor(scene, x, y, properties) {
-    super(scene, x, y, "pickups", "Fish", properties)
+    super(scene, x, y, "pickups", "f", properties)
 
     this.setOrigin(0, 0)
     this.setSize(24, 32)
     this.setOffset(8, 0)
 
-    this.name = "Fish"
+    this.name = "fish"
   }
 
   onCollide(player) {
@@ -30,4 +30,4 @@ export default class Flower extends StaticObject {
 }
 
 // Registriere das Flower-Objekt automatisch beim Import
-registerGameObject("Fish", Flower)
+registerGameObject("fish", fish)
