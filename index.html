@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alien Invasion</title>
+
+    <link rel="stylesheet" crossorigin href="/spiel-random_group/assets/main-BvV-iT-b.css">
+  </head>
+
+  <body>
+    <main>
+      <div class="header">
+        <div class="effects-container">
+          <!-- mehrere Sternschnuppen -->
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <img src="/spiel-random_group/assets/ufo-removebg-preview-B69UAa1z.png" class="flying-alien" alt="Alien" />
+          <img src="/spiel-random_group/assets/ufo-removebg-preview-B69UAa1z.png" class="flying-alien2" alt="Alien" />
+
+        </div>
+        <div class="header-content">
+          <h1>Alien Invasion</h1>
+          <div class="header-right">
+            <a class="button-90" href="game.html">Spiel starten</a>
+            <button class="question-button" onclick="scrollToIntro()">?</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro" id="intro">
+        <h2>Eine kurze Einführung in unser Spiel</h2>
+        <h3>Spielprinzip</h3>
+        <p>In dem Spiel "Alien Invasion" wirst du in die Rolle der mutigen Bärin "Claudette" versetzt. Verteidige dich gegen die bösen Aliens und versuche, so viele Level wie möglich zu bestreiten! Durch die Wurmlöcher wirst du zum nächsten Level teleportiert. Doch um diese passieren zu können, musst du alle Kometen einsammeln. Viel Erfolg!</p>
+        <h3>Steuerung</h3>
+        <p>Benutze die WASD Tasten um dich fortzubewegen. Mit der Leertaste kannst du Schüsse abfeuern. Um Items aufzusammeln, benutze E, zum Fallenlassen Q.
+        </p>
+      </div>
+  </body>
+</html>
+ <script>
+    function scrollToIntro() {
+      const intro = document.getElementById("intro");
+      intro.scrollIntoView({ behavior: "smooth" });
+    }
+
+    function animateAlien(element, minDuration, maxDuration, minTop, maxTop) {
+      const duration = Math.random() * (maxDuration - minDuration) + minDuration;
+      const top = Math.random() * (maxTop - minTop) + minTop;
+
+      // Neue Position und Animation setzen
+      element.style.top = `${top}%`;
+      element.style.animation = `alien-fly ${duration}s linear`;
+
+      // Wenn Animation vorbei ist, erneut starten (ohne Verzögerung diesmal)
+      element.addEventListener('animationend', () => {
+        element.style.animation = 'none';
+        void element.offsetWidth;
+        animateAlien(element, minDuration, maxDuration, minTop, maxTop);
+      }, { once: true });
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const alien1 = document.querySelector(".flying-alien");
+      const alien2 = document.querySelector(".flying-alien2");
+
+      // Start mit 1 Sekunde Verzögerung
+      setTimeout(() => {
+        animateAlien(alien1, 6, 14, 5, 20);
+      }, 1000);
+
+      setTimeout(() => {
+        animateAlien(alien2, 6, 14, 70, 90);
+      }, 250);
+    });
+  </script>
+  <script>
+
+  </script>

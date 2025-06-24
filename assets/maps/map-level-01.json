@@ -1,0 +1,353 @@
+{
+  "compressionlevel": -1,
+  "height": 15,
+  "infinite": false,
+  "layers": [
+    {
+      "data": [
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+      ],
+      "height": 15,
+      "id": 1,
+      "name": "Background",
+      "opacity": 1,
+      "type": "tilelayer",
+      "visible": true,
+      "width": 20,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "data": [
+        8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 8, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 2, 2, 2, 0, 0, 2, 0, 0, 8, 8, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2,
+        0, 0, 0, 0, 2, 0, 0, 8, 8, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0,
+        2, 0, 0, 8, 8, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 2, 0, 0, 0, 0, 2, 2, 0, 8,
+        8, 2, 2, 0, 0, 5, 0, 0, 0, 2, 0, 2, 0, 0, 0, 0, 0, 2, 0, 8, 8, 0, 2, 0,
+        0, 0, 0, 0, 0, 2, 0, 2, 0, 0, 0, 0, 0, 2, 6, 8, 8, 0, 2, 6, 0, 0, 0, 0,
+        0, 2, 0, 2, 0, 0, 0, 0, 0, 2, 6, 8, 8, 0, 2, 6, 6, 0, 0, 0, 0, 2, 0, 2,
+        0, 0, 0, 2, 2, 2, 6, 8, 8, 0, 2, 2, 2, 5, 5, 5, 5, 2, 0, 2, 6, 6, 6, 2,
+        6, 6, 5, 8, 8, 0, 0, 0, 2, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 2, 0, 0, 0, 8,
+        8, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 8, 8, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 8, 8, 8, 8, 8, 8, 8, 8,
+        8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8
+      ],
+      "height": 15,
+      "id": 2,
+      "name": "Obstacles",
+      "opacity": 1,
+      "type": "tilelayer",
+      "visible": true,
+      "width": 20,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "draworder": "topdown",
+      "id": 3,
+      "name": "SpawnPoints",
+      "objects": [
+        {
+          "height": 0,
+          "id": 8,
+          "name": "SpawnPlayer",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 0,
+          "x": 192,
+          "y": 288
+        },
+        {
+          "height": 0,
+          "id": 9,
+          "name": "NPC",
+          "properties": [
+            {
+              "name": "skin",
+              "type": "string",
+              "value": "npc"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 0,
+          "x": 416,
+          "y": 224
+        },
+        {
+          "height": 0,
+          "id": 13,
+          "name": "NPC",
+          "properties": [
+            {
+              "name": "skin",
+              "type": "string",
+              "value": "npc2"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 0,
+          "x": 236.666666666667,
+          "y": 214
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "draworder": "topdown",
+      "id": 4,
+      "name": "Items",
+      "objects": [
+        {
+          "gid": 4,
+          "height": 32,
+          "id": 14,
+          "name": "rocket",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 32,
+          "x": 176.666666666667,
+          "y": 370
+        },
+        {
+          "gid": 4,
+          "height": 32,
+          "id": 15,
+          "name": "rocket",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 32,
+          "x": 308.666666666667,
+          "y": 434.666666666667
+        },
+        {
+          "gid": 2,
+          "height": 32,
+          "id": 17,
+          "name": "Stone",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 32,
+          "x": 322,
+          "y": 328
+        },
+        {
+          "gid": 2,
+          "height": 32,
+          "id": 18,
+          "name": "Stone",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 32,
+          "x": 150,
+          "y": 205.333333333333
+        },
+        {
+          "gid": 2,
+          "height": 32,
+          "id": 19,
+          "name": "Stone",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 32,
+          "x": 550,
+          "y": 424.666666666667
+        },
+        {
+          "gid": 2,
+          "height": 32,
+          "id": 20,
+          "name": "Stone",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 32,
+          "x": 444,
+          "y": 162.666666666667
+        },
+        {
+          "gid": 10,
+          "height": 32,
+          "id": 22,
+          "name": "Flower",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 32,
+          "x": 430,
+          "y": 432.666666666667
+        },
+        {
+          "gid": 10,
+          "height": 32,
+          "id": 23,
+          "name": "Flower",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 32,
+          "x": 560,
+          "y": 91.3333333333333
+        },
+        {
+          "gid": 10,
+          "height": 32,
+          "id": 24,
+          "name": "Flower",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 32,
+          "x": 240,
+          "y": 82.6666666666667
+        },
+        {
+          "gid": 23,
+          "height": 32,
+          "id": 28,
+          "name": "",
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 32,
+          "x": 502,
+          "y": 262
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "draworder": "topdown",
+      "id": 5,
+      "name": "Doors",
+      "objects": [
+        {
+          "gid": 9,
+          "height": 32,
+          "id": 21,
+          "name": "Cave",
+          "properties": [
+            {
+              "name": "goToWorld",
+              "type": "string",
+              "value": "map-level-02"
+            },
+            {
+              "name": "needStoneCount",
+              "type": "int",
+              "value": 4
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 32,
+          "x": 477.333333333333,
+          "y": 96.6666666666667
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "nextlayerid": 8,
+  "nextobjectid": 29,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "tiledversion": "1.11.2",
+  "tileheight": 32,
+  "tilesets": [
+    {
+      "columns": 6,
+      "firstgid": 1,
+      "image": "..\/tileset.png",
+      "imageheight": 136,
+      "imagewidth": 204,
+      "margin": 1,
+      "name": "tileset",
+      "spacing": 2,
+      "tilecount": 24,
+      "tileheight": 32,
+      "tiles": [
+        {
+          "id": 1,
+          "properties": [
+            {
+              "name": "collides",
+              "type": "bool",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "properties": [
+            {
+              "name": "collides",
+              "type": "bool",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "properties": [
+            {
+              "name": "collides",
+              "type": "bool",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "properties": [
+            {
+              "name": "collides",
+              "type": "bool",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "tilewidth": 32
+    }
+  ],
+  "tilewidth": 32,
+  "type": "map",
+  "version": "1.10",
+  "width": 20
+}

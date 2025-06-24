@@ -1,0 +1,130 @@
+{
+	"[gymmu] Import Phaser": {
+		"scope": "javascript",
+		"prefix": "ip",
+		"body": [
+			"import Phaser from \"phaser\""
+		]
+	},
+	"[gymmu] Print to console": {
+		"scope": "javascript,typescript",
+		"prefix": "log",
+		"body": [
+			"console.log(${1})",
+			"${0}"
+		],
+		"description": "Log output to console"
+	},
+	"[gymmu] Print to website console": {
+		"scope": "javascript",
+		"prefix": "print",
+		"body": [
+			"print($1)",
+			"${0}"
+		],
+		"description": "print output to console"
+	},
+	"[gymmu] Document-QuerySelector": {
+		"scope": "javascript",
+		"prefix": "qs",
+		"body": [
+			"const ${1:id}Element = document.querySelector(\"#${1}\")",
+			"${0}"
+		],
+		"description": "Hole ein Element aus der Webseite mit einer ID"
+	},
+	"[gymmu] Create a function": {
+		"scope": "javascript",
+		"prefix": "func",
+		"body": [
+			"export function ${1:aufgabe}(args) {",
+			"	const input = args",
+			"	const result = []"
+			"	${0}",
+			"	return result.join(\"\")",
+			"}"
+		],
+		"description": "A javascript function."
+	},
+	"[gymmu] Linkup function handler": {
+		"scope": "javascript",
+		"prefix": "linkup",
+		"body": [
+			"linkupExerciseHandler('[data-click=${1:aufgabe01}]', ${1})",
+		],
+		"description": "A javascript function."
+	},
+
+	"[gymmu] Button mit einer Funktion": {
+		"scope": "html",
+		"prefix": "btn",
+		"body": [
+			"<button type='button' data-click=\"${1:functionName}\">${2:Button text}</button>"
+		],
+		"description": "Erstellt einen Button mit einer onclick Funktion."
+	},
+	"[gymmu] for-Schleife": {
+		"scope": "javascript",
+		"prefix": "for",
+		"body": [
+			"for (let i = 0; i < ${1:input}.length; i++) {",
+			"	const currentElement = ${1}[i]",
+			"	${0}"
+			"}"
+		]
+	}
+	"[gymmu-admin] Testfall": {
+		"scope": "javascript",
+		"prefix": "it",
+		"body": [
+			"it(\"${1:descrition}\", function() {",
+			"	const input = \"${2}\"",
+			"	const res = funcs.${3}(input)"
+			"	assert.equal(res, \"${4}\")",
+			"})"
+			"${0}",
+		],
+		"description": "Erstellt einen Testfall."
+	},
+	"[gymmu-admin] Testfall nur für den Browser": {
+		"scope": "javascript",
+		"prefix": "nit",
+		"body": [
+			"nit(\"${1:descrition}\", function() {",
+			"	${0}",
+			"})"
+		],
+		"description": "Erstellt einen Testfall der nur im Browser laufen soll."
+	},
+	"[gymmu-admin] Teste ob Funktion existiert": {
+		"scope": "javascript",
+		"prefix": "checkfunc",
+		"body": [
+			"it(\"Die Funktion '${1:functionName}()' soll existieren\", function() {",
+			"	assert.equal(typeof funcs.${1:functionName}, \"function\")",
+			"})"
+		],
+		"description": "Erstellt einen Testfall der prüft ob eine Funktion existiert."
+	},
+	"[gymmu-admin] Gruppe von Tests für eine Aufgabe": {
+		"scope": "javascript",
+		"prefix": "desc",
+		"body": [
+			"describe(\"${1:description}\", function() {",
+			"	${0}",
+			"})"
+		],
+		"description": "Erstellt eine Gruppe von Tests."
+	},
+	"[gymmu-admin] Gruppe von Tests für eine Aufgabe": {
+		"scope": "javascript",
+		"prefix": "aufg",
+		"body": [
+			"describe(\"Aufgabe ${1:01}\", function() {",
+			"	${0}",
+			"})"
+		],
+		"description": "Erstellt eine Gruppe von Tests für eine Aufgabe."
+	},
+
+}
