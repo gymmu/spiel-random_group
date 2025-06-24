@@ -78,10 +78,24 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
 
     const player = this.scene.player
 
-    if (player && this.scene.time.now > this.lastShotTime + this.shootCooldown) {
-      const distance = Phaser.Math.Distance.Between(this.x, this.y, player.x, player.y)
+    if (
+      player &&
+      this.scene.time.now > this.lastShotTime + this.shootCooldown
+    ) {
+      const distance = Phaser.Math.Distance.Between(
+        this.x,
+        this.y,
+        player.x,
+        player.y,
+      )
       if (distance < 300) {
-        const bullet = new Bullet(this.scene, this.x, this.y, player.x, player.y)
+        const bullet = new Bullet(
+          this.scene,
+          this.x,
+          this.y,
+          player.x,
+          player.y,
+        )
         this.scene.projectilesGroup.add(bullet)
 
         this.lastShotTime = this.scene.time.now
