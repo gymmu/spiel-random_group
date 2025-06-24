@@ -91,6 +91,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   attackSpeed = 1500
   inventory = new Array(6).fill(null) // Inventar mit 6 Slots initialisieren
   lastDirection = { x: 0, y: 1 } // Default: down
+  stoneCount = 0
 
   constructor(scene, x, y) {
     super(scene, x, y, "player")
@@ -400,5 +401,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     const itemClass = item.constructor
     const droppedItem = new itemClass(this.scene, x + 32, y, item.props || [])
     this.scene.items.add(droppedItem)
+  }
+
+  increaseStoneCount() {
+    this.stoneCount++;
   }
 }

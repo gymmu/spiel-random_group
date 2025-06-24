@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="14">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="28">
  <editorsettings>
   <export target="../public/assets/maps/map-level-01.json" format="json"/>
  </editorsettings>
@@ -25,21 +25,21 @@
  </layer>
  <layer id="2" name="Obstacles" width="20" height="15">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,8,8,8,8,8,8,8,8,8,8,8,0,8,8,8,6,0,0,
-0,0,6,0,0,5,0,0,0,0,0,0,0,0,0,0,0,6,0,0,
-0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,0,
-0,0,6,6,0,0,0,0,0,0,0,4,0,0,0,0,0,0,6,0,
-0,0,6,6,6,0,0,0,0,0,2,2,2,2,2,2,0,5,6,0,
-0,0,6,6,6,5,5,5,5,5,2,2,6,6,6,6,6,6,5,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,
+8,0,0,0,0,0,0,0,0,0,0,2,2,2,0,0,2,0,0,8,
+8,2,2,2,2,2,2,2,0,0,0,2,0,0,0,0,2,0,0,8,
+8,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,2,0,0,8,
+8,0,0,0,0,0,0,2,2,2,0,2,0,0,0,0,2,2,0,8,
+8,2,2,0,0,5,0,0,0,2,0,2,0,0,0,0,0,2,0,8,
+8,0,2,0,0,0,0,0,0,2,0,2,0,0,0,0,0,2,6,8,
+8,0,2,6,0,0,0,0,0,2,0,2,0,0,0,0,0,2,6,8,
+8,0,2,6,6,0,0,0,0,2,0,2,0,0,0,2,2,2,6,8,
+8,0,2,2,2,5,5,5,5,2,0,2,6,6,6,2,6,6,5,8,
+8,0,0,0,2,0,0,0,0,2,2,2,0,0,0,2,0,0,0,8,
+8,0,0,0,2,0,0,0,0,0,0,0,0,0,0,2,0,0,0,8,
+8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
 </data>
  </layer>
  <objectgroup id="3" name="SpawnPoints">
@@ -48,55 +48,22 @@
   <object id="13" name="NPC" x="416" y="224"/>
  </objectgroup>
  <objectgroup id="4" name="Items">
-  <object id="1" name="Mushroom" gid="3" x="160" y="256" width="32" height="32">
-   <properties>
-    <property name="damageHp" type="int" value="10"/>
-    <property name="restoreHp" type="int" value="20"/>
-   </properties>
-  </object>
-  <object id="2" name="Mushroom" gid="3" x="320" y="256" width="32" height="32">
-   <properties>
-    <property name="damageHp" type="int" value="10"/>
-    <property name="restoreHp" type="int" value="20"/>
-   </properties>
-  </object>
-  <object id="3" name="Mushroom" gid="3" x="544" y="288" width="32" height="32">
-   <properties>
-    <property name="damageHp" type="int" value="10"/>
-    <property name="restoreHp" type="int" value="20"/>
-   </properties>
-  </object>
-  <object id="4" name="Flower" gid="4" x="512" y="320" width="32" height="32">
-   <properties>
-    <property name="damageHp" type="int" value="20"/>
-    <property name="restoreHp" type="int" value="50"/>
-   </properties>
-  </object>
-  <object id="5" name="Flower" gid="4" x="512" y="224" width="32" height="32">
-   <properties>
-    <property name="damageHp" type="int" value="20"/>
-    <property name="restoreHp" type="int" value="50"/>
-   </properties>
-  </object>
-  <object id="6" name="Flower" gid="4" x="288" y="320" width="32" height="32">
-   <properties>
-    <property name="damageHp" type="int" value="20"/>
-    <property name="keyName" value="level-02"/>
-    <property name="restoreHp" type="int" value="50"/>
-   </properties>
-  </object>
-  <object id="12" name="Stone" gid="2" x="256" y="288" width="32" height="32">
-   <properties>
-    <property name="collides" type="bool" value="false"/>
-    <property name="damageHp" type="int" value="10"/>
-   </properties>
-  </object>
+  <object id="14" name="rocket" gid="4" x="176.667" y="370" width="32" height="32"/>
+  <object id="15" name="rocket" gid="4" x="308.667" y="434.667" width="32" height="32"/>
+  <object id="17" name="Stone" gid="2" x="322" y="328" width="32" height="32"/>
+  <object id="18" name="Stone" gid="2" x="150" y="205.333" width="32" height="32"/>
+  <object id="19" name="Stone" gid="2" x="550" y="424.667" width="32" height="32"/>
+  <object id="20" name="Stone" gid="2" x="444" y="162.667" width="32" height="32"/>
+  <object id="22" name="Flower" gid="10" x="430" y="432.667" width="32" height="32"/>
+  <object id="23" name="Flower" gid="10" x="560" y="91.3333" width="32" height="32"/>
+  <object id="24" name="Flower" gid="10" x="240" y="82.6667" width="32" height="32"/>
+  <object id="27" gid="10" x="378.667" y="-50.6667" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="5" name="Doors">
-  <object id="7" name="Cave" gid="7" x="416" y="192" width="32" height="32">
+  <object id="21" name="Cave" gid="9" x="477.333" y="96.6667" width="32" height="32">
    <properties>
     <property name="goToWorld" value="map-level-02"/>
-    <property name="needKey" value="level-02"/>
+    <property name="needStoneCount" type="int" value="1"/>
    </properties>
   </object>
  </objectgroup>

@@ -3,12 +3,12 @@ import { getRandomDirection } from "./utils.js"
 import Player from "./player.js"
 
 export default class NPC extends Phaser.Physics.Arcade.Sprite {
-  hp = 10
+  hp = 6
   maxHp = 100
   #speed = 100
   stepsLeft = 60
   move = "left"
-  attackPower = 5
+  attackPower = 2
   isInvulnerable = false
   skin = "npc"
 

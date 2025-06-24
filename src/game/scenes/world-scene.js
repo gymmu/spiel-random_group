@@ -10,6 +10,7 @@ import "../gameObjects/pickups/mushroom"
 import "../gameObjects/pickups/flower"
 import "../gameObjects/pickups/stone"
 import "../gameObjects/pickups/bush"
+import "../gameObjects/pickups/rocket"
 
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
