@@ -183,6 +183,17 @@ export default class Base2DScene extends Phaser.Scene {
       this,
     )
 
+    this.physics.add.collider(
+      this.bulletGroup,
+      this.obstacles,
+      (bullet, obstacle) => {
+        bullet.bounceCount++
+        if (bullet.bounceCount >= bullet.maxBounces) {
+          bullet.destroy()
+        }
+      }
+    )
+
     // Set up projectile collisions after map and objects are loaded
     this.physics.add.collider(
       this.projectilesGroup,

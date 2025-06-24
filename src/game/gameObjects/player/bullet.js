@@ -20,9 +20,10 @@ export default class Bullet extends Phaser.Physics.Arcade.Image {
     this.body.onWorldBounds = true
     this.body.setAllowGravity(false)
 
-    // Selbstzerstörung nach 2 Sekunden
-    scene.time.delayedCall(2000, () => {
-      this.destroy()
-    })
+    this.setBounce(1)
+
+    // Optional: Max. Anzahl an Bounces
+    this.bounceCount = 0
+    this.maxBounces = 10
   }
 }
