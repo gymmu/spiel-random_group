@@ -53,6 +53,12 @@ export default class Base2DScene extends Phaser.Scene {
    * verwendet wurde, muss auch hier verwendet werden.
    */
   create() {
+    const graphics = this.make.graphics()
+    graphics.fillStyle(0xff0000, 1) // rot
+    graphics.fillCircle(4, 4, 4) // (x, y, radius)
+    graphics.generateTexture("bullet", 16, 16) // Name, Breite, Höhe
+    graphics.destroy()
+
     this.items = this.add.group()
     this.stones = this.add.group() // Neue Gruppe für Steine
     this.doors = this.add.group()
@@ -69,6 +75,8 @@ export default class Base2DScene extends Phaser.Scene {
 
     // Wird verwendet um weitere Spielinformationen an den Entwickler zu geben.
     this.scene.bringToTop("debug-scene")
+
+
   }
 
   /**
@@ -191,7 +199,7 @@ export default class Base2DScene extends Phaser.Scene {
       (projectile, npc) => {
         if (projectile && projectile.destroy) {
           projectile.destroy()
-          npc.damage(projectile.attackPower)
+          npc.damage(projectile.attackPower || 3)
         }
       },
     )
@@ -217,7 +225,7 @@ export default class Base2DScene extends Phaser.Scene {
       player.gotHit = false
     })
 
-    this.player.damage(10)
+    this.player.damage(5)
   }
 
   npcCollideObstacles(npc, obstacle) {
