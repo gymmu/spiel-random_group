@@ -3,7 +3,7 @@ import Phaser from "phaser"
 
 export default class Bullet extends Phaser.Physics.Arcade.Image {
   constructor(scene, x, y, targetX, targetY, speed = 300) {
-    super(scene, x, y, "bullet") // Stelle sicher, dass du eine "bullet"-Textur hast
+    super(scene, x, y, "bullet")
 
     scene.add.existing(this)
     scene.physics.add.existing(this)
@@ -20,7 +20,7 @@ export default class Bullet extends Phaser.Physics.Arcade.Image {
     this.body.onWorldBounds = true
     this.body.setAllowGravity(false)
 
-    // Selbstzerstörung nach 3 Sekunden
+    // Selbstzerstörung nach 2 Sekunden
     scene.time.delayedCall(2000, () => {
       this.destroy()
     })

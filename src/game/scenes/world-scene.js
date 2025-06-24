@@ -64,6 +64,7 @@ export default class Base2DScene extends Phaser.Scene {
     this.doors = this.add.group()
     this.npcs = this.add.group()
     this.projectilesGroup = this.add.group()
+    this.bulletGroup = this.add.group()
 
     this.loadMap(this.mapKey)
     this.createPlayerObject()
@@ -200,6 +201,16 @@ export default class Base2DScene extends Phaser.Scene {
         if (projectile && projectile.destroy) {
           projectile.destroy()
           npc.damage(projectile.attackPower || 3)
+        }
+      },
+    )
+    this.physics.add.collider(
+      this.bulletGroup,
+      this.player,
+      (bullet, player) => {
+        if (bullet && bullet.destroy) {
+          bullet.destroy()
+          player.damage(bullet.attackPower || 2)
         }
       },
     )
