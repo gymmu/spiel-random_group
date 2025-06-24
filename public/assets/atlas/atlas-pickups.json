@@ -23,6 +23,10 @@
     {
       "filename": "shell",
       "frame": { "x": 35, "y": 69, "w": 32, "h": 32 }
+    },
+    {
+      "filename": "seestern",
+      "frame": { "x": 103, "y": 69, "w": 32, "h": 32 }
     }
   ]
 }

@@ -7,27 +7,22 @@ export default class Shell extends StaticObject {
     super(scene, x, y, "pickups", "shell", properties)
 
     this.setOrigin(0, 0)
-    this.setSize(24, 24)
-    this.setOffset(4, 6)
+    this.setSize(16, 16)
+    this.setOffset(16, 16)
 
     this.name = "shell"
   }
 
   onCollide(player) {
     if (player instanceof Player) {
-      player.addItemToInventory(this)
-      this.destroy()
-    }
-  }
-
-  interact(player) {
-    if (player && player instanceof Player) {
-      player.addItemToInventory(this)
-      player.increaseStoneCount()
+      player.decreaseSpeed(50)
+      this.scene.time.delayedCall(1000, () => {
+        player.resetSpeed()
+      })
       this.destroy()
     }
   }
 }
 
-// Registriere das Stone-Objekt automatisch beim Import
+// Registriere das Mushroom-Objekt automatisch beim Import
 registerGameObject("Shell", Shell)
