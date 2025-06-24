@@ -1,9 +1,9 @@
 import StaticObject from "../staticObject"
 import { registerGameObject } from "../registry"
 
-export default class Flower extends StaticObject {
+export default class Fish extends StaticObject {
   constructor(scene, x, y, properties) {
-    super(scene, x, y, "pickups", "f", properties)
+    super(scene, x, y, "pickups", "fish", properties)
 
     this.setOrigin(0, 0)
     this.setSize(24, 32)
@@ -30,4 +30,4 @@ export default class Flower extends StaticObject {
 }
 
 // Registriere das Flower-Objekt automatisch beim Import
-registerGameObject("fish", fish)
+registerGameObject("Fish", Fish)
