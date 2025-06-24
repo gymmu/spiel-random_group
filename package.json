@@ -1,7 +1,7 @@
 {
   "name": "spiel-random_group",
   "homepage": "https://gymmu.github.io/spiel-random_group",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "",
   "type": "module",
   "scripts": {
