@@ -12,7 +12,6 @@ import InteractionObject from "../interactionObject"
 export function savePlayerState(scene, player) {
   scene.registry.set("playerState", {
     hp: player.hp,
-    inventory: player.inventory,
     keys: player.keys,
   })
 }
@@ -98,7 +97,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     super(scene, x, y, "player")
     this.scene.add.existing(this)
     this.scene.physics.add.existing(this, false)
-    this.body.collideWorldBounds = false
+    this.body.collideWorldBounds = true
     this.setOrigin(0.5, 0.5)
     this.setSize(24, 24, false)
     this.setOffset(4, 8)

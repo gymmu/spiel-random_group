@@ -11,6 +11,9 @@ import "../gameObjects/pickups/flower"
 import "../gameObjects/pickups/stone"
 import "../gameObjects/pickups/bush"
 import "../gameObjects/pickups/rocket"
+import "../gameObjects/pickups/seestern"
+import "../gameObjects/pickups/fish"
+import "../gameObjects/pickups/shell"
 
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
@@ -64,6 +67,7 @@ export default class Base2DScene extends Phaser.Scene {
     this.doors = this.add.group()
     this.npcs = this.add.group()
     this.projectilesGroup = this.add.group()
+    this.bulletGroup = this.add.group()
 
     this.loadMap(this.mapKey)
     this.createPlayerObject()
@@ -75,8 +79,6 @@ export default class Base2DScene extends Phaser.Scene {
 
     // Wird verwendet um weitere Spielinformationen an den Entwickler zu geben.
     this.scene.bringToTop("debug-scene")
-
-
   }
 
   /**
@@ -182,6 +184,17 @@ export default class Base2DScene extends Phaser.Scene {
       this,
     )
 
+    this.physics.add.collider(
+      this.bulletGroup,
+      this.obstacles,
+      (bullet, obstacle) => {
+        bullet.bounceCount++
+        if (bullet.bounceCount >= bullet.maxBounces) {
+          bullet.destroy()
+        }
+      }
+    )
+
     // Set up projectile collisions after map and objects are loaded
     this.physics.add.collider(
       this.projectilesGroup,
@@ -200,6 +213,16 @@ export default class Base2DScene extends Phaser.Scene {
         if (projectile && projectile.destroy) {
           projectile.destroy()
           npc.damage(projectile.attackPower || 3)
+        }
+      },
+    )
+    this.physics.add.collider(
+      this.bulletGroup,
+      this.player,
+      (bullet, player) => {
+        if (bullet && bullet.destroy) {
+          bullet.destroy()
+          player.damage(bullet.attackPower || 2)
         }
       },
     )
