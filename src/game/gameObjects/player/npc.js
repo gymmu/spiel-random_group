@@ -82,7 +82,7 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
     }
 
     if (isIdle) {
-      this.anims.play("npc_idle", true)
+      this.anims.play(`${this.skin}_idle`, true)
     }
 
     // Wenn der NPC getroffen wurde, lasse ihn blinken
