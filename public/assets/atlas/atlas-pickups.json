@@ -15,6 +15,10 @@
     {
       "filename": "rocket",
       "frame": { "x": 103, "y": 1, "w": 32, "h": 32 }
+    },
+    {
+      "filename": "fish",
+      "frame": { "x": 69, "y": 69, "w": 32, "h": 32 }
     }
   ]
 }
