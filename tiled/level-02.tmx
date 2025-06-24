@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="24">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="28">
  <editorsettings>
   <export target="../public/assets/maps/map-level-02.json" format="json"/>
  </editorsettings>
@@ -25,9 +25,9 @@
  </layer>
  <layer id="2" name="Obstacles" width="20" height="15">
   <data encoding="csv">
-17,17,17,17,0,0,0,0,5,5,0,0,17,0,0,0,0,6,17,17,
+17,17,17,17,0,0,0,0,5,5,0,0,17,17,0,0,0,17,17,17,
 17,17,17,17,0,0,15,0,0,0,5,5,17,17,0,0,0,6,17,0,
-17,17,17,0,0,0,0,17,17,17,17,0,0,17,17,6,0,15,6,0,
+17,17,17,0,0,0,0,17,17,17,17,0,0,17,17,6,0,15,6,17,
 17,17,0,0,0,0,0,0,17,17,0,0,0,17,17,0,0,0,0,17,
 0,0,0,15,0,0,0,0,0,5,6,5,5,0,0,0,0,17,17,17,
 15,15,0,0,0,0,0,0,0,0,5,6,5,0,0,6,0,17,17,17,
@@ -44,6 +44,10 @@
  </layer>
  <objectgroup id="3" name="SpawnPoints">
   <object id="12" name="SpawnPlayer" x="48" y="416"/>
+  <object id="24" name="NPC" x="304.667" y="338"/>
+  <object id="25" name="NPC" x="528" y="113.333"/>
+  <object id="26" name="NPC" x="588.667" y="337.333"/>
+  <object id="27" name="NPC" x="112.667" y="239.333"/>
  </objectgroup>
  <objectgroup id="4" name="Items">
   <object id="9" name="Flower" gid="4" x="352" y="224" width="32" height="32">
@@ -53,6 +57,7 @@
   </object>
   <object id="20" name="Mushroom" gid="15" x="256" y="223.333" width="32" height="32">
    <properties>
+    <property name="collides" type="bool" value="true"/>
     <property name="damageHp" value="20"/>
    </properties>
   </object>
