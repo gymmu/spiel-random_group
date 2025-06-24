@@ -11,6 +11,9 @@ import "../gameObjects/pickups/flower"
 import "../gameObjects/pickups/stone"
 import "../gameObjects/pickups/bush"
 import "../gameObjects/pickups/rocket"
+import "../gameObjects/pickups/seestern"
+import "../gameObjects/pickups/fish"
+import "../gameObjects/pickups/shell"
 
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
@@ -75,8 +78,6 @@ export default class Base2DScene extends Phaser.Scene {
 
     // Wird verwendet um weitere Spielinformationen an den Entwickler zu geben.
     this.scene.bringToTop("debug-scene")
-
-
   }
 
   /**

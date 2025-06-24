@@ -8,7 +8,7 @@ export default class Shell extends StaticObject {
 
     this.setOrigin(0, 0)
     this.setSize(16, 16)
-    this.setOffset(16, 16)
+    this.setOffset(8, 8)
 
     this.name = "shell"
   }
