@@ -14,8 +14,13 @@ export default class Seestern extends StaticObject {
   }
 
   onCollide(player) {
+    if (this.scene.cameraManager) {
+      this.scene.cameraManager.cameraMaskRadius += 50
+      this.scene.cameraManager.setCameraMask()
+    }
     if (player instanceof Player) {
       player.addItemToInventory(this)
+      player.increaseStoneCount()
       this.destroy()
     }
   }

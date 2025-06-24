@@ -332,18 +332,6 @@
                 {
                  "gid":16,
                  "height":32,
-                 "id":43,
-                 "name":"Seestern ",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":449.333333333333,
-                 "y":35.3333333333333
-                }, 
-                {
-                 "gid":16,
-                 "height":32,
                  "id":44,
                  "name":"Seestern",
                  "rotation":0,
@@ -352,6 +340,18 @@
                  "width":32,
                  "x":351.333333333333,
                  "y":259.333333333333
+                }, 
+                {
+                 "gid":16,
+                 "height":32,
+                 "id":47,
+                 "name":"Seestern ",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":447.333333333333,
+                 "y":31.3333333333333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -374,6 +374,11 @@
                          "name":"goToWorld",
                          "type":"string",
                          "value":"map-level-03"
+                        }, 
+                        {
+                         "name":"needStoneCount",
+                         "type":"int",
+                         "value":4
                         }],
                  "rotation":0,
                  "type":"",
@@ -389,7 +394,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":45,
+ "nextobjectid":48,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
