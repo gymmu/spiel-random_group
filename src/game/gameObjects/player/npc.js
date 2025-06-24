@@ -1,14 +1,15 @@
 import Phaser from "phaser"
 import { getRandomDirection } from "./utils.js"
 import Player from "./player.js"
+import Bullet from "./bullet.js"
 
 export default class NPC extends Phaser.Physics.Arcade.Sprite {
-  hp = 10
-  maxHp = 100
+  hp = 6
+  maxHp = 10
   #speed = 100
   stepsLeft = 60
   move = "left"
-  attackPower = 5
+  attackPower = 2
   isInvulnerable = false
   skin = "npc"
 
@@ -27,21 +28,14 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
     this.setOffset(4, 8)
 
     this.skin = skin
+    this.lastShotTime = 0
+    this.shootCooldown = 8000 // alle 2 Sekunden
   }
 
-  /**
-   * Setze die Geschwindigkeit des Spielers. Kann nicht grösser als 960 sein, da
-   * der Spieler sonst durch die Spielobjekte geht. Kann auch nicht kleiner als
-   * 0 sein.
-   *
-   * @param {integer} value Die Geschwindigkeit der Spielers.
-   */
   set speed(value) {
-    this.#speed = Math.min(value, 960)
-    this.#speed = Math.max(0, this.#speed)
+    this.#speed = Math.min(Math.max(0, value), 960)
   }
 
-  /** Geschwindigkeit des Spielers. */
   get speed() {
     return this.#speed
   }
@@ -56,51 +50,48 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
       this.stepsLeft = 60 + Math.floor(Math.random() * 60)
     }
 
-    this.body.setVelocityX(0)
-    this.body.setVelocityY(0)
+    body.setVelocity(0)
 
     if (this.move === "left") {
       body.setVelocityX(-this.speed)
-      if (isIdle) this.anims.play(`${this.skin}_left`, true)
+      this.anims.play(`${this.skin}_left`, true)
       isIdle = false
-    }
-    if (this.move === "right") {
-      this.body.setVelocityX(this.speed)
-      if (isIdle) this.anims.play(`${this.skin}_right`, true)
+    } else if (this.move === "right") {
+      body.setVelocityX(this.speed)
+      this.anims.play(`${this.skin}_right`, true)
       isIdle = false
-    }
-
-    if (this.move === "up") {
+    } else if (this.move === "up") {
       body.setVelocityY(-this.speed)
-      if (isIdle) this.anims.play(`${this.skin}_up`, true)
+      this.anims.play(`${this.skin}_up`, true)
       isIdle = false
-    }
-    if (this.move === "down") {
+    } else if (this.move === "down") {
       body.setVelocityY(this.speed)
-      if (isIdle) this.anims.play(`${this.skin}_down`, true)
+      this.anims.play(`${this.skin}_down`, true)
       isIdle = false
     }
 
     if (isIdle) {
-      this.anims.play("npc_idle", true)
+      this.anims.play(`${this.skin}_idle`, true)
     }
 
-    // Wenn der NPC getroffen wurde, lasse ihn blinken
-    if (this.isInvulnerable) {
-      // Setze die Farbe des Spielers auf rot
-      this.tint = 0xff0000
-    } else {
-      // Setze die Farbe des Spielers auf normal
-      this.tint = 0xffffff
+    this.setTint(this.isInvulnerable ? 0xff0000 : 0xffffff)
+
+    const player = this.scene.player
+
+    if (player && this.scene.time.now > this.lastShotTime + this.shootCooldown) {
+      const distance = Phaser.Math.Distance.Between(this.x, this.y, player.x, player.y)
+      if (distance < 300) {
+        const bullet = new Bullet(this.scene, this.x, this.y, player.x, player.y)
+        this.scene.projectilesGroup.add(bullet)
+
+        this.lastShotTime = this.scene.time.now
+      }
     }
   }
 
   heal(value) {
-    if (value == null) value = 0
-    this.hp = this.hp + value
-    if (this.hp > this.maxHp) {
-      this.hp = this.mapHp
-    }
+    this.hp += value ?? 0
+    if (this.hp > this.maxHp) this.hp = this.maxHp
   }
 
   damage(value) {
@@ -111,16 +102,24 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
       this.isInvulnerable = false
     })
 
-    if (value == null) value = 0
-    this.hp = this.hp - value
-    if (this.hp <= 0) {
-      this.destroy()
-    }
+    this.hp -= value ?? 0
+    if (this.hp <= 0) this.destroy()
   }
 
   onCollide(actor) {
     if (actor instanceof Player) {
       actor.damage(this.attackPower)
+
+      // Knockback
+      const dx = actor.x - this.x
+      const dy = actor.y - this.y
+      const length = Math.hypot(dx, dy)
+      const knockbackPower = 200
+
+      if (length > 0) {
+        actor.body.velocity.x += (dx / length) * knockbackPower
+        actor.body.velocity.y += (dy / length) * knockbackPower
+      }
     }
   }
 }

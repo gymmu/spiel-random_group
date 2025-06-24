@@ -23,6 +23,7 @@ export default class Stone extends StaticObject {
   interact(player) {
     if (player && player instanceof Player) {
       player.addItemToInventory(this)
+      player.increaseStoneCount()
       this.destroy()
     }
   }
