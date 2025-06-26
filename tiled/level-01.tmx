@@ -4,7 +4,7 @@
   <export target="../public/assets/maps/map-level-01.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" source="tileset.tsx"/>
- <layer id="1" name="Background" width="20" height="15">
+ <layer id="1" name="Background" width="20" height="15" locked="1">
   <data encoding="csv">
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -23,7 +23,7 @@
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 </data>
  </layer>
- <layer id="2" name="Obstacles" width="20" height="15">
+ <layer id="2" name="Obstacles" width="20" height="15" locked="1">
   <data encoding="csv">
 8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
 8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,
@@ -31,18 +31,18 @@
 8,2,2,2,2,2,2,2,0,0,0,2,0,0,0,0,2,0,0,8,
 8,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,2,0,0,8,
 8,0,0,0,0,0,0,2,2,2,0,2,0,0,0,0,2,2,0,8,
-8,2,2,0,0,5,0,0,0,2,0,2,0,0,0,0,0,2,0,8,
+8,2,2,0,0,0,0,0,0,2,0,2,0,0,0,0,0,2,0,8,
 8,0,2,0,0,0,0,0,0,2,0,2,0,0,0,0,0,2,6,8,
 8,0,2,6,0,0,0,0,0,2,0,2,0,0,0,0,0,2,6,8,
 8,0,2,6,6,0,0,0,0,2,0,2,0,0,0,2,2,2,6,8,
-8,0,2,2,2,5,5,5,5,2,0,2,6,6,6,2,6,6,5,8,
+8,0,2,2,2,0,0,0,0,2,0,2,6,6,6,2,6,6,0,8,
 8,0,0,0,2,0,0,0,0,2,2,2,0,0,0,2,0,0,0,8,
 8,0,0,0,2,0,0,0,0,0,0,0,0,0,0,2,0,0,0,8,
 8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,
 8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
 </data>
  </layer>
- <objectgroup id="3" name="SpawnPoints">
+ <objectgroup id="3" name="SpawnPoints" locked="1">
   <object id="8" name="SpawnPlayer" x="192" y="288"/>
   <object id="9" name="NPC" x="416" y="224"/>
   <object id="13" name="NPC" x="416" y="224"/>
@@ -57,9 +57,8 @@
   <object id="22" name="Flower" gid="10" x="430" y="432.667" width="32" height="32"/>
   <object id="23" name="Flower" gid="10" x="560" y="91.3333" width="32" height="32"/>
   <object id="24" name="Flower" gid="10" x="240" y="82.6667" width="32" height="32"/>
-  <object id="28" gid="23" x="502" y="262" width="32" height="32"/>
  </objectgroup>
- <objectgroup id="5" name="Doors">
+ <objectgroup id="5" name="Doors" locked="1">
   <object id="21" name="Cave" gid="9" x="477.333" y="96.6667" width="32" height="32">
    <properties>
     <property name="goToWorld" value="map-level-02"/>
