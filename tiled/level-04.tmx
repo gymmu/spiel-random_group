@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="43">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="44">
  <editorsettings>
   <export target="../public/assets/maps/map-level-04.json" format="json"/>
  </editorsettings>
@@ -93,19 +93,71 @@
  </objectgroup>
  <objectgroup id="4" name="SpawnPoints">
   <object id="3" name="SpawnPlayer" x="466.785" y="304.349"/>
-  <object id="6" name="NPC" x="623" y="214"/>
-  <object id="9" name="NPC" x="585" y="141"/>
-  <object id="10" name="NPC" x="336" y="337"/>
-  <object id="11" name="NPC" x="685" y="463"/>
-  <object id="12" name="NPC" x="492" y="83"/>
-  <object id="14" name="NPC" x="463" y="495"/>
-  <object id="16" name="NPC" x="817" y="112"/>
-  <object id="17" name="NPC" x="749" y="397"/>
-  <object id="18" name="NPC" x="885" y="529"/>
-  <object id="21" name="NPC" x="243" y="526"/>
-  <object id="22" name="NPC" x="206" y="147"/>
-  <object id="23" name="NPC" x="49" y="270"/>
+  <object id="6" name="NPC" x="623" y="214">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="9" name="NPC" x="585" y="141">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="10" name="NPC" x="336" y="337">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="11" name="NPC" x="685" y="463">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="12" name="NPC" x="492" y="83">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="14" name="NPC" x="463" y="495">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="16" name="NPC" x="817" y="112">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="17" name="NPC" x="749" y="397">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="18" name="NPC" x="885" y="529">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="21" name="NPC" x="243" y="526">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="22" name="NPC" x="206" y="147">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="23" name="NPC" x="49" y="270">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
   <object id="24" name="NPC" x="144" y="367"/>
-  <object id="25" name="NPC" x="142" y="592"/>
+  <object id="25" name="NPC" x="142" y="592">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
