@@ -42,8 +42,8 @@
             28, 0, 0, 28, 28, 28, 0, 28, 0, 28, 0, 28, 28, 28, 0, 0, 28, 28, 28, 28, 28, 0, 28, 0, 0, 28, 0, 0, 0, 28,
             28, 29, 0, 0, 0, 28, 28, 0, 0, 28, 0, 28, 0, 0, 0, 0, 0, 28, 0, 0, 28, 0, 28, 0, 0, 28, 0, 0, 0, 28,
             0, 0, 29, 0, 0, 28, 0, 0, 28, 28, 0, 28, 0, 28, 28, 28, 28, 28, 0, 0, 28, 0, 28, 0, 0, 0, 0, 0, 0, 28,
-            0, 0, 29, 0, 0, 28, 0, 29, 28, 28, 0, 28, 0, 28, 0, 0, 28, 0, 0, 0, 28, 0, 28, 0, 0, 0, 28, 28, 0, 28,
-            28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 0, 28, 0, 28, 0, 0, 0, 28, 0, 0, 28,
+            28, 0, 29, 0, 0, 28, 0, 29, 28, 28, 0, 28, 0, 28, 0, 0, 28, 0, 0, 0, 28, 0, 28, 0, 0, 0, 28, 28, 0, 28,
+            28, 0, 0, 0, 0, 28, 0, 0, 28, 28, 0, 28, 0, 28, 0, 0, 0, 0, 28, 0, 28, 0, 28, 0, 0, 0, 28, 0, 0, 28,
             28, 0, 28, 28, 28, 28, 28, 0, 0, 28, 0, 28, 0, 28, 0, 0, 0, 29, 28, 0, 28, 0, 28, 0, 0, 0, 28, 0, 0, 28,
             0, 0, 0, 0, 0, 28, 28, 28, 0, 28, 0, 28, 0, 28, 28, 28, 28, 28, 28, 0, 28, 0, 28, 28, 28, 28, 28, 28, 0, 28,
             0, 28, 28, 28, 28, 28, 28, 28, 0, 28, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 28, 0, 28, 0, 28, 0, 0, 0, 0, 28,
@@ -351,6 +351,12 @@
                  "height":0,
                  "id":6,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -362,6 +368,12 @@
                  "height":0,
                  "id":9,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -373,6 +385,12 @@
                  "height":0,
                  "id":10,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -384,6 +402,12 @@
                  "height":0,
                  "id":11,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -395,6 +419,12 @@
                  "height":0,
                  "id":12,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -406,6 +436,12 @@
                  "height":0,
                  "id":14,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -417,6 +453,12 @@
                  "height":0,
                  "id":16,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -428,6 +470,12 @@
                  "height":0,
                  "id":17,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -439,6 +487,12 @@
                  "height":0,
                  "id":18,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -450,6 +504,12 @@
                  "height":0,
                  "id":21,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -461,6 +521,12 @@
                  "height":0,
                  "id":22,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -472,6 +538,12 @@
                  "height":0,
                  "id":23,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -494,6 +566,12 @@
                  "height":0,
                  "id":25,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -508,7 +586,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":43,
+ "nextobjectid":44,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
@@ -591,6 +669,15 @@
                 }, 
                 {
                  "id":16,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":19,
                  "properties":[
                         {
                          "name":"collides",
