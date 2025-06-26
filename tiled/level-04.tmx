@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="42">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="43">
  <editorsettings>
   <export target="../public/assets/maps/map-level-04.json" format="json"/>
  </editorsettings>
@@ -38,8 +38,8 @@
 28,0,0,28,28,28,0,28,0,28,0,28,28,28,0,0,28,28,28,28,28,0,28,0,0,28,0,0,0,28,
 28,29,0,0,0,28,28,0,0,28,0,28,0,0,0,0,0,28,0,0,28,0,28,0,0,28,0,0,0,28,
 0,0,29,0,0,28,0,0,28,28,0,28,0,28,28,28,28,28,0,0,28,0,28,0,0,0,0,0,0,28,
-0,0,29,0,0,28,0,29,28,28,0,28,0,28,0,0,28,0,0,0,28,0,28,0,0,0,28,28,0,28,
-28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,0,28,0,28,0,0,0,28,0,0,28,
+28,0,29,0,0,28,0,29,28,28,0,28,0,28,0,0,28,0,0,0,28,0,28,0,0,0,28,28,0,28,
+28,0,0,0,0,28,0,0,28,28,0,28,0,0,0,0,0,0,28,0,28,0,28,0,0,0,28,0,0,28,
 28,0,28,28,28,28,28,0,0,28,0,28,0,28,0,0,0,29,28,0,28,0,28,0,0,0,28,0,0,28,
 0,0,0,0,0,28,28,28,0,28,0,28,0,28,28,28,28,28,28,0,28,0,28,28,28,28,28,28,0,28,
 0,28,28,28,28,28,28,28,0,28,0,28,0,0,0,0,0,0,0,0,28,0,28,0,28,0,0,0,0,28,
@@ -89,6 +89,7 @@
   <object id="39" name="Cookie" gid="27" x="671" y="577" width="32" height="32"/>
   <object id="40" name="Cookie" gid="27" x="32" y="162" width="32" height="32"/>
   <object id="41" name="Cookie" gid="27" x="738" y="288" width="32" height="32"/>
+  <object id="42" name="Icecream" gid="30" x="864" y="97" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="4" name="SpawnPoints">
   <object id="3" name="SpawnPlayer" x="466.785" y="304.349"/>

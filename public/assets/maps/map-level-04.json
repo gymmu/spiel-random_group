@@ -312,6 +312,18 @@
                  "width":32,
                  "x":738,
                  "y":288
+                }, 
+                {
+                 "gid":30,
+                 "height":32,
+                 "id":42,
+                 "name":"Icecream",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":864,
+                 "y":97
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -496,7 +508,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":42,
+ "nextobjectid":43,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",

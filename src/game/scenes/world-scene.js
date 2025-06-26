@@ -19,6 +19,7 @@ import "../gameObjects/pickups/healflower"
 import "../gameObjects/pickups/speedflower"
 import "../gameObjects/pickups/bonbon"
 import "../gameObjects/pickups/icecream"
+import "../gameObjects/pickups/cookie"
 
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte

@@ -47,6 +47,10 @@
     {
       "filename": "icecream",
       "frame": { "x": 171, "y": 137, "w": 32, "h": 32 }
+    },
+    {
+      "filename": "cookie",
+      "frame": { "x": 69, "y": 137, "w": 32, "h": 32 }
     }
   ]
 }
