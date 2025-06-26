@@ -89,7 +89,6 @@
         {
          "draworder":"topdown",
          "id":3,
-         "locked":true,
          "name":"SpawnPoints",
          "objects":[
                 {
@@ -168,6 +167,28 @@
                  "width":0,
                  "x":577.333,
                  "y":554.667
+                }, 
+                {
+                 "height":0,
+                 "id":37,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1196,
+                 "y":554.666666666667
+                }, 
+                {
+                 "height":0,
+                 "id":38,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1393.33333333333,
+                 "y":889.333333333333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -423,7 +444,7 @@
                         {
                          "name":"needStoneCount",
                          "type":"string",
-                         "value":"5"
+                         "value":"6"
                         }],
                  "rotation":0,
                  "type":"",
@@ -439,7 +460,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":37,
+ "nextobjectid":39,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
@@ -522,6 +543,15 @@
                 }, 
                 {
                  "id":16,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":19,
                  "properties":[
                         {
                          "name":"collides",

@@ -4,7 +4,7 @@
   <export target="../public/assets/maps/map-level-02.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" source="tileset.tsx"/>
- <layer id="1" name="Background" width="20" height="15">
+ <layer id="1" name="Background" width="20" height="15" locked="1">
   <data encoding="csv">
 13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,
 13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,
@@ -26,30 +26,30 @@
  <layer id="2" name="Obstacles" width="20" height="15">
   <data encoding="csv">
 17,17,17,17,17,0,0,17,17,17,0,0,17,17,0,0,0,17,17,17,
-17,17,17,17,0,0,15,0,0,0,5,5,17,17,0,0,0,6,17,17,
+17,17,17,17,0,0,15,0,0,0,0,0,17,17,0,0,0,6,17,17,
 17,17,17,0,0,0,0,17,17,17,17,0,0,17,17,6,0,15,6,17,
 17,17,0,0,0,17,17,0,17,0,0,0,0,17,17,0,0,0,0,17,
-0,0,0,15,0,17,0,0,0,5,6,5,5,0,0,0,0,17,17,17,
+0,0,0,15,0,17,0,0,0,0,6,0,0,0,0,0,0,17,17,17,
 15,0,0,0,17,17,0,0,0,0,17,17,17,17,0,6,0,17,17,17,
 0,0,0,0,0,0,0,0,0,0,0,17,0,17,17,0,6,0,17,17,
 0,0,0,0,0,0,0,17,17,17,0,0,0,0,0,15,0,0,17,17,
 6,0,0,0,0,0,6,0,17,17,0,17,17,17,0,0,0,0,0,17,
 17,0,0,0,17,17,17,0,0,0,0,0,17,17,17,6,0,0,0,0,
-17,17,0,0,15,17,5,5,0,0,0,6,6,6,6,6,0,0,0,17,
+17,17,0,0,15,17,0,0,0,0,0,6,6,6,6,6,0,0,0,17,
 15,0,0,0,0,0,6,6,0,0,0,6,6,6,17,6,17,17,0,17,
 0,0,6,0,0,0,0,0,17,17,0,0,0,0,0,17,17,17,17,0,
 0,0,6,17,0,0,0,17,17,17,15,0,0,15,0,17,17,17,17,0,
 17,0,15,17,17,0,0,0,17,17,17,0,0,0,17,17,17,17,17,17
 </data>
  </layer>
- <objectgroup id="3" name="SpawnPoints">
+ <objectgroup id="3" name="SpawnPoints" locked="1">
   <object id="12" name="SpawnPlayer" x="48" y="416"/>
   <object id="24" name="NPC" x="304.667" y="338"/>
   <object id="25" name="NPC" x="528" y="113.333"/>
   <object id="26" name="NPC" x="588.667" y="337.333"/>
   <object id="27" name="NPC" x="112.667" y="239.333"/>
  </objectgroup>
- <objectgroup id="4" name="Items">
+ <objectgroup id="4" name="Items" locked="1">
   <object id="29" name="Fish " gid="15" x="256" y="193" width="32" height="32">
    <properties>
     <property name="restoreHp" value="30"/>
@@ -98,7 +98,7 @@
   <object id="44" name="Seestern" gid="16" x="351.333" y="259.333" width="32" height="32"/>
   <object id="47" name="Seestern " gid="16" x="447.333" y="31.3333" width="32" height="32"/>
  </objectgroup>
- <objectgroup id="5" name="Doors">
+ <objectgroup id="5" name="Doors" locked="1">
   <object id="1" name="Cave" gid="7" x="480" y="32" width="32" height="32">
    <properties>
     <property name="goToWorld" value="map-level-03"/>
