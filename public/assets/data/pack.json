@@ -35,6 +35,15 @@
         }
       },
       {
+        "type": "spritesheet",
+        "key": "npc3",
+        "url": "npc3.png",
+        "frameConfig": {
+          "frameWidth": 32,
+          "frameHeight": 32
+        }
+      },
+      {
         "type": "animation",
         "key": "anims",
         "url": "data/animations.json"
