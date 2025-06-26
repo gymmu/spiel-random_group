@@ -28,8 +28,8 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
     this.setOffset(4, 8)
 
     this.skin = skin
-    this.lastShotTime = 0
-    this.shootCooldown = 8000 // alle 8 Sekunden
+    this.lastShotTime = this.scene.time.now + Phaser.Math.Between(0, 3000)
+    this.shootCooldown = Phaser.Math.Between(5000, 10000) // alle 6-10 Sekunden
   }
 
   set speed(value) {
@@ -99,6 +99,7 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
         this.scene.bulletGroup.add(bullet)
 
         this.lastShotTime = this.scene.time.now
+        this.shootCooldown = Phaser.Math.Between(6000, 10000)
       }
     }
   }
