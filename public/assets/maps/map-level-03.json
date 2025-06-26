@@ -107,6 +107,12 @@
                  "height":0,
                  "id":31,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc4"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -122,7 +128,7 @@
                         {
                          "name":"skin",
                          "type":"string",
-                         "value":"npc2"
+                         "value":"npc4"
                         }],
                  "rotation":0,
                  "type":"",
@@ -135,6 +141,12 @@
                  "height":0,
                  "id":33,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc4"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -150,7 +162,7 @@
                         {
                          "name":"skin",
                          "type":"string",
-                         "value":"npc2"
+                         "value":"npc4"
                         }],
                  "rotation":0,
                  "type":"",
@@ -167,7 +179,7 @@
                         {
                          "name":"skin",
                          "type":"string",
-                         "value":"npc2"
+                         "value":"npc4"
                         }],
                  "rotation":0,
                  "type":"",
@@ -180,6 +192,12 @@
                  "height":0,
                  "id":36,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc4"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -195,25 +213,31 @@
                         {
                          "name":"skin",
                          "type":"string",
-                         "value":"npc2"
+                         "value":"npc4"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
                  "x":1196,
-                 "y":554.666666666667
+                 "y":554.667
                 }, 
                 {
                  "height":0,
                  "id":38,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc4"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":1393.33333333333,
-                 "y":889.333333333333
+                 "x":1393.33,
+                 "y":889.333
                 }, 
                 {
                  "height":0,
@@ -223,18 +247,18 @@
                         {
                          "name":"skin",
                          "type":"string",
-                         "value":"npc2"
+                         "value":"npc4"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":577.333333333333,
-                 "y":557.333333333333
+                 "x":577.333,
+                 "y":557.333
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -621,6 +645,33 @@
                 }, 
                 {
                  "id":23,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":25,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":27,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":28,
                  "properties":[
                         {
                          "name":"collides",
