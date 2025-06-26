@@ -71,9 +71,21 @@
   <object id="33" name="Bonbon" gid="26" x="386" y="96" width="32" height="32"/>
   <object id="34" name="Bonbon" gid="26" x="-2" y="255" width="32" height="32"/>
   <object id="35" name="Bonbon" gid="26" x="61" y="608" width="32" height="32"/>
-  <object id="36" name="IceCream" gid="30" x="479" y="516" width="32" height="32"/>
-  <object id="37" name="IceCream" gid="30" x="799" y="514" width="32" height="32"/>
-  <object id="38" name="IceCream" gid="30" x="128" y="288" width="32" height="32"/>
+  <object id="36" name="IceCream" gid="30" x="479" y="516" width="32" height="32">
+   <properties>
+    <property name="restoreHp" value="30"/>
+   </properties>
+  </object>
+  <object id="37" name="IceCream" gid="30" x="799" y="514" width="32" height="32">
+   <properties>
+    <property name="restoreHp" value="30"/>
+   </properties>
+  </object>
+  <object id="38" name="IceCream" gid="30" x="128" y="288" width="32" height="32">
+   <properties>
+    <property name="restoreHp" value="30"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="4" name="SpawnPoints">
   <object id="3" name="SpawnPlayer" x="466.785" y="304.349"/>

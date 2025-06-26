@@ -2,7 +2,7 @@ import StaticObject from "../staticObject"
 import { registerGameObject } from "../registry"
 import Player from "../player/player"
 
-export default class IceCream extends StaticObject {
+export default class Icecream extends StaticObject {
   constructor(scene, x, y, properties) {
     super(scene, x, y, "pickups", "icecream", properties)
 
@@ -25,4 +25,4 @@ export default class IceCream extends StaticObject {
 }
 
 // Registriere das Flower-Objekt automatisch beim Import
-registerGameObject("Icecream", IceCream)
+registerGameObject("Icecream", Icecream)
