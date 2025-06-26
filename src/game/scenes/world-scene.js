@@ -18,6 +18,7 @@ import "../gameObjects/pickups/ruby"
 import "../gameObjects/pickups/healflower"
 import "../gameObjects/pickups/speedflower"
 import "../gameObjects/pickups/bonbon"
+import "../gameObjects/pickups/IceCream"
 
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
