@@ -89,7 +89,6 @@
         {
          "draworder":"topdown",
          "id":3,
-         "locked":true,
          "name":"SpawnPoints",
          "objects":[
                 {
@@ -102,6 +101,72 @@
                  "width":0,
                  "x":176,
                  "y":80
+                }, 
+                {
+                 "height":0,
+                 "id":31,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1069.33333333333,
+                 "y":233.333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":32,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1206.66666666667,
+                 "y":384
+                }, 
+                {
+                 "height":0,
+                 "id":33,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":953.333333333333,
+                 "y":869.333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":34,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":862.666666666667,
+                 "y":600
+                }, 
+                {
+                 "height":0,
+                 "id":35,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1508,
+                 "y":693.333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":36,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":577.333333333333,
+                 "y":554.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -112,6 +177,7 @@
         {
          "draworder":"topdown",
          "id":4,
+         "locked":true,
          "name":"Items",
          "objects":[
                 {
@@ -159,8 +225,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":66.6666666666667,
-                 "y":306.666666666667
+                 "x":66.6667,
+                 "y":306.667
                 }, 
                 {
                  "gid":20,
@@ -171,7 +237,7 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1413.33333333333,
+                 "x":1413.33,
                  "y":860
                 }, 
                 {
@@ -195,8 +261,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":670.666666666667,
-                 "y":90.6666666666667
+                 "x":670.667,
+                 "y":90.6667
                 }, 
                 {
                  "gid":21,
@@ -219,8 +285,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1501.33333333333,
-                 "y":137.333333333333
+                 "x":1501.33,
+                 "y":137.333
                 }, 
                 {
                  "gid":21,
@@ -232,7 +298,7 @@
                  "visible":true,
                  "width":32,
                  "x":1508,
-                 "y":541.333333333333
+                 "y":541.333
                 }, 
                 {
                  "gid":21,
@@ -243,8 +309,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1374.66666666667,
-                 "y":654.666666666667
+                 "x":1374.67,
+                 "y":654.667
                 }, 
                 {
                  "gid":21,
@@ -255,8 +321,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1110.66666666667,
-                 "y":786.666666666667
+                 "x":1110.67,
+                 "y":786.667
                 }, 
                 {
                  "gid":21,
@@ -267,8 +333,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":697.333333333333,
-                 "y":889.333333333333
+                 "x":697.333,
+                 "y":889.333
                 }, 
                 {
                  "gid":21,
@@ -291,8 +357,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":125.333333333333,
-                 "y":902.666666666667
+                 "x":125.333,
+                 "y":902.667
                 }, 
                 {
                  "gid":21,
@@ -304,7 +370,7 @@
                  "visible":true,
                  "width":32,
                  "x":112,
-                 "y":509.333333333333
+                 "y":509.333
                 }, 
                 {
                  "gid":20,
@@ -327,7 +393,7 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1474.66666666667,
+                 "x":1474.67,
                  "y":232
                 }],
          "opacity":1,
@@ -362,7 +428,7 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1410.66666666667,
+                 "x":1410.67,
                  "y":72
                 }],
          "opacity":1,
@@ -372,7 +438,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":31,
+ "nextobjectid":37,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
@@ -382,12 +448,12 @@
          "columns":6,
          "firstgid":1,
          "image":"..\/tileset.png",
-         "imageheight":136,
+         "imageheight":170,
          "imagewidth":204,
          "margin":1,
          "name":"tileset",
          "spacing":2,
-         "tilecount":24,
+         "tilecount":30,
          "tileheight":32,
          "tiles":[
                 {
