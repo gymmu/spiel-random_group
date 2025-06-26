@@ -12,6 +12,7 @@ import InteractionObject from "../interactionObject"
 export function savePlayerState(scene, player) {
   scene.registry.set("playerState", {
     hp: player.hp,
+    inventory: new Array(6).fill(null),
     keys: player.keys,
   })
 }
@@ -411,6 +412,6 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   }
 
   increaseStoneCount() {
-    this.stoneCount++;
+    this.stoneCount++
   }
 }
