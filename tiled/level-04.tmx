@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="36">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="43">
  <editorsettings>
-  <export target="../public/assets/maps/level-04..tmx" format="tmx"/>
+  <export target="../public/assets/maps/map-level-04.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" source="tileset.tsx"/>
- <layer id="1" name="Background" width="30" height="20">
+ <layer id="1" name="Background" width="30" height="20" visible="0">
   <data encoding="csv">
 25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
 25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
@@ -32,15 +32,15 @@
   <data encoding="csv">
 28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,
 28,0,0,0,0,28,0,0,0,0,0,28,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,
-28,0,29,28,0,28,0,29,0,0,0,28,0,0,0,0,0,0,0,0,0,0,29,28,28,0,0,0,28,28,
+28,0,29,28,0,28,0,29,0,0,0,28,0,0,0,0,0,0,29,29,0,0,29,28,28,0,0,0,28,28,
 28,0,0,28,0,0,0,28,0,28,28,28,28,28,28,28,28,28,28,28,28,0,28,28,0,0,0,28,28,28,
-28,0,0,28,0,28,0,28,0,28,0,0,0,0,0,0,0,0,0,28,0,0,28,0,0,0,28,0,0,28,
+28,0,0,28,0,28,0,28,0,28,0,0,0,0,0,0,0,0,0,29,0,0,28,0,0,0,28,0,0,28,
 28,0,0,28,28,28,0,28,0,28,0,28,28,28,0,0,28,28,28,28,28,0,28,0,0,28,0,0,0,28,
 28,29,0,0,0,28,28,0,0,28,0,28,0,0,0,0,0,28,0,0,28,0,28,0,0,28,0,0,0,28,
 0,0,29,0,0,28,0,0,28,28,0,28,0,28,28,28,28,28,0,0,28,0,28,0,0,0,0,0,0,28,
-0,0,29,0,0,28,0,29,28,28,0,28,0,28,0,0,28,0,0,0,28,0,28,0,0,0,28,28,0,28,
-28,0,0,0,0,28,0,0,28,28,0,28,0,28,0,0,0,0,28,0,28,0,28,0,0,0,28,0,0,28,
-28,0,28,28,28,28,28,0,0,28,0,28,0,28,0,0,0,0,28,0,28,0,28,0,0,0,28,0,0,28,
+28,0,29,0,0,28,0,29,28,28,0,28,0,28,0,0,28,0,0,0,28,0,28,0,0,0,28,28,0,28,
+28,0,0,0,0,28,0,0,28,28,0,28,0,0,0,0,0,0,28,0,28,0,28,0,0,0,28,0,0,28,
+28,0,28,28,28,28,28,0,0,28,0,28,0,28,0,0,0,29,28,0,28,0,28,0,0,0,28,0,0,28,
 0,0,0,0,0,28,28,28,0,28,0,28,0,28,28,28,28,28,28,0,28,0,28,28,28,28,28,28,0,28,
 0,28,28,28,28,28,28,28,0,28,0,28,0,0,0,0,0,0,0,0,28,0,28,0,28,0,0,0,0,28,
 0,28,0,0,28,28,28,0,0,28,0,28,28,28,28,28,28,28,28,28,28,0,28,0,28,0,28,28,0,28,
@@ -56,6 +56,7 @@
   <object id="4" name="Cave" gid="9" x="64" y="484" width="32" height="32">
    <properties>
     <property name="goToWorld" value="map-level-01"/>
+    <property name="needStoneCount" value="6"/>
    </properties>
   </object>
  </objectgroup>
@@ -70,19 +71,34 @@
   <object id="33" name="Bonbon" gid="26" x="386" y="96" width="32" height="32"/>
   <object id="34" name="Bonbon" gid="26" x="-2" y="255" width="32" height="32"/>
   <object id="35" name="Bonbon" gid="26" x="61" y="608" width="32" height="32"/>
+  <object id="36" name="Icecream" gid="30" x="479" y="516" width="32" height="32">
+   <properties>
+    <property name="restoreHp" value="30"/>
+   </properties>
+  </object>
+  <object id="37" name="Icecream" gid="30" x="799" y="514" width="32" height="32">
+   <properties>
+    <property name="restoreHp" value="30"/>
+   </properties>
+  </object>
+  <object id="38" name="Icecream" gid="30" x="128" y="288" width="32" height="32">
+   <properties>
+    <property name="restoreHp" value="30"/>
+   </properties>
+  </object>
+  <object id="39" name="Cookie" gid="27" x="671" y="577" width="32" height="32"/>
+  <object id="40" name="Cookie" gid="27" x="32" y="162" width="32" height="32"/>
+  <object id="41" name="Cookie" gid="27" x="738" y="288" width="32" height="32"/>
+  <object id="42" name="Icecream" gid="30" x="864" y="97" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="4" name="SpawnPoints">
   <object id="3" name="SpawnPlayer" x="466.785" y="304.349"/>
-  <object id="5" name="NPC" x="561" y="336"/>
   <object id="6" name="NPC" x="623" y="214"/>
-  <object id="7" name="NPC" x="398" y="399"/>
   <object id="9" name="NPC" x="585" y="141"/>
   <object id="10" name="NPC" x="336" y="337"/>
   <object id="11" name="NPC" x="685" y="463"/>
   <object id="12" name="NPC" x="492" y="83"/>
-  <object id="13" name="NPC" x="78" y="144"/>
   <object id="14" name="NPC" x="463" y="495"/>
-  <object id="15" name="NPC" x="786" y="340"/>
   <object id="16" name="NPC" x="817" y="112"/>
   <object id="17" name="NPC" x="749" y="397"/>
   <object id="18" name="NPC" x="885" y="529"/>

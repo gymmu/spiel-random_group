@@ -17,6 +17,9 @@ import "../gameObjects/pickups/shell"
 import "../gameObjects/pickups/ruby"
 import "../gameObjects/pickups/healflower"
 import "../gameObjects/pickups/speedflower"
+import "../gameObjects/pickups/bonbon"
+import "../gameObjects/pickups/icecream"
+import "../gameObjects/pickups/cookie"
 
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
@@ -102,7 +105,7 @@ export default class Base2DScene extends Phaser.Scene {
       0,
       0,
       this.map.widthInPixels,
-      this.map.heightInPixels
+      this.map.heightInPixels,
     )
 
     // Verwendet die Kacheln von "tileset" so wie es in **Tiled** verwendet wird.
@@ -203,7 +206,7 @@ export default class Base2DScene extends Phaser.Scene {
         if (bullet.bounceCount >= bullet.maxBounces) {
           bullet.destroy()
         }
-      }
+      },
     )
 
     // Set up projectile collisions after map and objects are loaded
