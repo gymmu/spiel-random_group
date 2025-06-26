@@ -53,6 +53,15 @@
         }
       },
       {
+        "type": "spritesheet",
+        "key": "npc5",
+        "url": "npc5.png",
+        "frameConfig": {
+          "frameWidth": 32,
+          "frameHeight": 32
+        }
+      },
+      {
         "type": "animation",
         "key": "anims",
         "url": "data/animations.json"
