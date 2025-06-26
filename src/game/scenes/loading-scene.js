@@ -32,7 +32,7 @@ export default class LoadingScene extends Phaser.Scene {
 
   update() {
     if (this.SPACE.isDown) {
-      this.scene.start("world", { map: "map-level-03" })
+      this.scene.start("world", { map: "map-level-01" })
     }
   }
 }
