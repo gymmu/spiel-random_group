@@ -139,7 +139,7 @@ export default class Base2DScene extends Phaser.Scene {
     const registry = getRegisteredGameObjects()
     registry.forEach((config, objectName) => {
       // Steine in eigene Gruppe, Rest wie gehabt
-      if (objectName === "Stone" || objectName === "Ruby" || objectName === "Seestern" || objectName === "Icecream") {
+      if (objectName === "Stone" || objectName === "Ruby" || objectName === "Seestern" || objectName === "Bonbon") {
         this.createObjects(
           this.map,
           config.layer,
