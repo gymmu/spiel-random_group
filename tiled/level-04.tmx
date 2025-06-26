@@ -56,7 +56,7 @@
   <object id="4" name="Cave" gid="9" x="480" y="259" width="32" height="32">
    <properties>
     <property name="goToWorld" value="map-level-01"/>
-    <property name="needStoneCount" value="6"/>
+    <property name="needStoneCount" value="10"/>
    </properties>
   </object>
  </objectgroup>
