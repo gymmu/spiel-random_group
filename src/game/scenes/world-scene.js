@@ -14,6 +14,9 @@ import "../gameObjects/pickups/rocket"
 import "../gameObjects/pickups/seestern"
 import "../gameObjects/pickups/fish"
 import "../gameObjects/pickups/shell"
+import "../gameObjects/pickups/ruby"
+import "../gameObjects/pickups/healflower"
+import "../gameObjects/pickups/speedflower"
 
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
@@ -93,6 +96,14 @@ export default class Base2DScene extends Phaser.Scene {
   loadMap(mapKey) {
     // Erstellt die Karte so wie sie in `mapKey` definiert ist.
     this.map = this.make.tilemap({ key: mapKey })
+
+    // Setze World Bounds auf die Map Grösse
+    this.physics.world.setBounds(
+      0,
+      0,
+      this.map.widthInPixels,
+      this.map.heightInPixels
+    )
 
     // Verwendet die Kacheln von "tileset" so wie es in **Tiled** verwendet wird.
     this.tiles = this.map.addTilesetImage("tileset")
