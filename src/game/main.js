@@ -20,7 +20,7 @@ const config = {
   physics: {
     default: "arcade", // Standard-Physiksystem, das verwendet wird.
     arcade: {
-      debug: true, // Aktiviert den Debug-Modus für die Physik, um Kollisionen und andere Informationen anzuzeigen.
+      debug: false, // Aktiviert den Debug-Modus für die Physik, um Kollisionen und andere Informationen anzuzeigen.
       gravity: { y: 0 }, // Setzt die Schwerkraft auf 0, damit sich Objekte nicht von selbst bewegen.
     },
   },
