@@ -165,7 +165,7 @@
   </object>
   <object id="44" name="NPC" x="623" y="400">
    <properties>
-    <property name="skin " value="npc3"/>
+    <property name="skin " value="npc6"/>
    </properties>
   </object>
  </objectgroup>
