@@ -4,7 +4,7 @@ import Player from "./player.js"
 import Bullet from "./bullet.js"
 
 export default class NPC extends Phaser.Physics.Arcade.Sprite {
-  hp = 9
+  hp = 6
   maxHp = 10
   #speed = 100
   stepsLeft = 60

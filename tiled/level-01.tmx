@@ -44,8 +44,16 @@
  </layer>
  <objectgroup id="3" name="SpawnPoints" locked="1">
   <object id="8" name="SpawnPlayer" x="192" y="288"/>
-  <object id="9" name="NPC" x="416" y="224"/>
-  <object id="13" name="NPC" x="416" y="224"/>
+  <object id="9" name="NPC" x="416" y="224">
+   <properties>
+    <property name="skin" value="npc2"/>
+   </properties>
+  </object>
+  <object id="13" name="NPC" x="416" y="224">
+   <properties>
+    <property name="skin" value="npc2"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="4" name="Items">
   <object id="14" name="rocket" gid="4" x="176.667" y="370" width="32" height="32"/>
