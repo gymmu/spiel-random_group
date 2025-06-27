@@ -15,7 +15,7 @@ export default class Icecream extends StaticObject {
 
   onCollide(player) {
     //super.onCollide(player)
-    player.heal(this.props.healAmount || 15)
+    player.heal(this.props.healAmount || 10)
 
     // Wenn die Blume einen Schlüssel hat, geben wir ihn dem Spieler
     if (this.props.keyName) {
