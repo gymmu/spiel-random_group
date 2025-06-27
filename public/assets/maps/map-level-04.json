@@ -78,7 +78,7 @@
                         {
                          "name":"goToWorld",
                          "type":"string",
-                         "value":"map-level-01"
+                         "value":"map-level-00"
                         }, 
                         {
                          "name":"needStoneCount",
@@ -555,6 +555,12 @@
                  "height":0,
                  "id":24,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
