@@ -71,6 +71,15 @@
         }
       },
       {
+        "type": "spritesheet",
+        "key": "npc7",
+        "url": "npc7.png",
+        "frameConfig": {
+          "frameWidth": 32,
+          "frameHeight": 32
+        }
+      },
+      {
         "type": "animation",
         "key": "anims",
         "url": "data/animations.json"
