@@ -555,6 +555,12 @@
                  "height":0,
                  "id":24,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc3"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,

@@ -153,7 +153,11 @@
     <property name="skin" value="npc3"/>
    </properties>
   </object>
-  <object id="24" name="NPC" x="144" y="367"/>
+  <object id="24" name="NPC" x="144" y="367">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
   <object id="25" name="NPC" x="142" y="592">
    <properties>
     <property name="skin" value="npc3"/>
