@@ -61,7 +61,7 @@ export default class UIScene extends Phaser.Scene {
    * Create inventory slots at the bottom of the screen.
    */
   createInventorySlots() {
-    const slotCount = 6
+    const slotCount = 10
     const slotWidth = 50
     const slotHeight = 50
     const slotSpacing = 10

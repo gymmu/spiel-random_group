@@ -1,7 +1,7 @@
 {
-  "name": "phaser-playground",
-  "homepage": "https://gymmu.github.io/phaser-playground",
-  "version": "0.1.0",
+  "name": "spiel-random_group",
+  "homepage": "https://gymmu.github.io/spiel-random_group",
+  "version": "2.0.0",
   "description": "",
   "type": "module",
   "scripts": {

@@ -12,7 +12,7 @@ import InteractionObject from "../interactionObject"
 export function savePlayerState(scene, player) {
   scene.registry.set("playerState", {
     hp: player.hp,
-    inventory: player.inventory,
+    inventory: new Array(10).fill(null),
     keys: player.keys,
   })
 }
@@ -27,8 +27,8 @@ export function savePlayerState(scene, player) {
 export function loadPlayerState(scene, map) {
   // Spielerstatus aus Registry laden oder Standardwerte setzen
   const savedPlayerState = scene.registry.get("playerState") || {
-    hp: 10,
-    inventory: new Array(6).fill(null),
+    hp: 40,
+    inventory: new Array(10).fill(null),
     keys: {},
   }
 
@@ -82,21 +82,23 @@ export function createPlayer(scene, map) {
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   keys = {}
-  hp = 10
-  maxHp = 100
+  hp = 40
+  maxHp = 500
   speed = 100
   baseSpeed = 100
   gotHit = false
   isAttacking = false
+  isInvulnerable = false
   attackSpeed = 1500
-  inventory = new Array(6).fill(null) // Inventar mit 6 Slots initialisieren
+  inventory = new Array(10).fill(null) // Inventar mit 6 Slots initialisieren
   lastDirection = { x: 0, y: 1 } // Default: down
+  stoneCount = 0
 
   constructor(scene, x, y) {
     super(scene, x, y, "player")
     this.scene.add.existing(this)
     this.scene.physics.add.existing(this, false)
-    this.body.collideWorldBounds = false
+    this.body.collideWorldBounds = true
     this.setOrigin(0.5, 0.5)
     this.setSize(24, 24, false)
     this.setOffset(4, 8)
@@ -281,7 +283,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     // Wenn der Spieler getroffen wurde, lasse ihn blinken
-    if (this.gotHit) {
+    if (this.isInvulnerable) {
       // Setze die Farbe des Spielers auf rot
       this.tint = 0xff0000
     } else {
@@ -322,6 +324,13 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
    * @param {integer} value Der Schaden der dem Spieler zugefügt werden soll.
    */
   damage(value) {
+    if (this.isInvulnerable) return
+
+    this.isInvulnerable = true
+    this.scene.time.delayedCall(1000, () => {
+      this.isInvulnerable = false
+    })
+
     if (value == null) value = 0
     this.hp = this.hp - value
     if (this.hp <= 0) {
@@ -400,5 +409,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     const itemClass = item.constructor
     const droppedItem = new itemClass(this.scene, x + 32, y, item.props || [])
     this.scene.items.add(droppedItem)
+  }
+
+  increaseStoneCount() {
+    this.stoneCount++
   }
 }

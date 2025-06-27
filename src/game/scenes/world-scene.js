@@ -10,6 +10,16 @@ import "../gameObjects/pickups/mushroom"
 import "../gameObjects/pickups/flower"
 import "../gameObjects/pickups/stone"
 import "../gameObjects/pickups/bush"
+import "../gameObjects/pickups/rocket"
+import "../gameObjects/pickups/seestern"
+import "../gameObjects/pickups/fish"
+import "../gameObjects/pickups/shell"
+import "../gameObjects/pickups/ruby"
+import "../gameObjects/pickups/healflower"
+import "../gameObjects/pickups/speedflower"
+import "../gameObjects/pickups/bonbon"
+import "../gameObjects/pickups/icecream"
+import "../gameObjects/pickups/cookie"
 
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
@@ -52,11 +62,18 @@ export default class Base2DScene extends Phaser.Scene {
    * verwendet wurde, muss auch hier verwendet werden.
    */
   create() {
+    const graphics = this.make.graphics()
+    graphics.fillStyle(0xff0000, 1) // rot
+    graphics.fillCircle(4, 4, 4) // (x, y, radius)
+    graphics.generateTexture("bullet", 16, 16) // Name, Breite, Höhe
+    graphics.destroy()
+
     this.items = this.add.group()
     this.stones = this.add.group() // Neue Gruppe für Steine
     this.doors = this.add.group()
     this.npcs = this.add.group()
     this.projectilesGroup = this.add.group()
+    this.bulletGroup = this.add.group()
 
     this.loadMap(this.mapKey)
     this.createPlayerObject()
@@ -68,8 +85,26 @@ export default class Base2DScene extends Phaser.Scene {
 
     // Wird verwendet um weitere Spielinformationen an den Entwickler zu geben.
     this.scene.bringToTop("debug-scene")
+
+    this.addText()
   }
 
+  addText() {
+    if (this.mapKey !== "map-level-00") return
+    this.add
+      .text(470, 120, "Du hast es geschafft!")
+      .setOrigin(0.5, 0.5)
+      .setColor("black")
+      .setFontSize("20px")
+      .setFontStyle("bold")
+
+      this.add
+      .text(170, 330, "Glückwunsch!")
+      .setOrigin(0.5, 0.5)
+      .setColor("black")
+      .setFontSize("25px")
+      .setFontStyle("bold")
+  }
   /**
    * Diese Methode lädt die Spielkarte für eine Szene.
    *
@@ -82,6 +117,14 @@ export default class Base2DScene extends Phaser.Scene {
   loadMap(mapKey) {
     // Erstellt die Karte so wie sie in `mapKey` definiert ist.
     this.map = this.make.tilemap({ key: mapKey })
+
+    // Setze World Bounds auf die Map Grösse
+    this.physics.world.setBounds(
+      0,
+      0,
+      this.map.widthInPixels,
+      this.map.heightInPixels,
+    )
 
     // Verwendet die Kacheln von "tileset" so wie es in **Tiled** verwendet wird.
     this.tiles = this.map.addTilesetImage("tileset")
@@ -117,7 +160,7 @@ export default class Base2DScene extends Phaser.Scene {
     const registry = getRegisteredGameObjects()
     registry.forEach((config, objectName) => {
       // Steine in eigene Gruppe, Rest wie gehabt
-      if (objectName === "Stone") {
+      if (objectName === "Stone" || objectName === "Ruby" || objectName === "Seestern" || objectName === "Bonbon") {
         this.createObjects(
           this.map,
           config.layer,
@@ -173,6 +216,17 @@ export default class Base2DScene extends Phaser.Scene {
       this,
     )
 
+    this.physics.add.collider(
+      this.bulletGroup,
+      this.obstacles,
+      (bullet, obstacle) => {
+        bullet.bounceCount++
+        if (bullet.bounceCount >= bullet.maxBounces) {
+          bullet.destroy()
+        }
+      },
+    )
+
     // Set up projectile collisions after map and objects are loaded
     this.physics.add.collider(
       this.projectilesGroup,
@@ -190,7 +244,17 @@ export default class Base2DScene extends Phaser.Scene {
       (projectile, npc) => {
         if (projectile && projectile.destroy) {
           projectile.destroy()
-          npc.damage(projectile.attackPower)
+          npc.damage(projectile.attackPower || 3)
+        }
+      },
+    )
+    this.physics.add.collider(
+      this.bulletGroup,
+      this.player,
+      (bullet, player) => {
+        if (bullet && bullet.destroy) {
+          bullet.destroy()
+          player.damage(bullet.attackPower || 2)
         }
       },
     )
@@ -216,7 +280,7 @@ export default class Base2DScene extends Phaser.Scene {
       player.gotHit = false
     })
 
-    this.player.damage(10)
+    this.player.damage(5)
   }
 
   npcCollideObstacles(npc, obstacle) {

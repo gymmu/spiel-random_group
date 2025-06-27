@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="45">
+ <editorsettings>
+  <export target="../public/assets/maps/map-level-04.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="tileset.tsx"/>
+ <layer id="1" name="Background" width="30" height="20" visible="0">
+  <data encoding="csv">
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,
+25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25
+</data>
+ </layer>
+ <layer id="5" name="Obstacles" width="30" height="20">
+  <data encoding="csv">
+28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,
+28,0,0,0,0,28,0,0,0,0,0,28,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,
+28,0,29,28,0,28,0,29,0,0,0,28,0,0,0,0,0,0,29,29,0,0,29,28,28,0,0,0,28,28,
+28,0,0,28,0,0,0,28,0,28,28,28,28,28,28,28,28,28,28,28,28,0,28,28,0,0,0,28,28,28,
+28,0,0,28,0,28,0,28,0,28,0,0,0,0,0,0,0,0,0,29,0,0,28,0,0,0,28,0,0,28,
+28,0,0,28,28,28,0,28,0,28,0,28,28,28,0,0,28,28,28,28,28,0,28,0,0,28,0,0,0,28,
+28,29,0,0,0,28,28,0,0,28,0,28,0,0,0,0,0,28,0,0,28,0,28,0,0,28,0,0,0,28,
+0,0,29,0,0,28,0,0,28,28,0,28,0,28,28,0,28,28,0,0,28,0,28,0,0,0,0,0,0,28,
+28,0,29,0,0,28,0,29,28,28,0,28,0,28,0,0,28,0,0,0,28,0,28,0,0,0,28,28,0,28,
+28,0,0,0,0,28,0,0,28,28,0,28,0,28,0,0,0,0,28,0,28,0,28,0,0,0,28,0,0,28,
+28,0,28,28,28,28,28,0,0,28,0,28,0,28,0,0,0,29,28,0,28,0,28,0,0,0,28,0,0,28,
+0,0,0,0,0,28,28,28,0,28,0,28,0,28,28,28,28,28,28,0,28,0,28,28,28,28,28,28,0,28,
+0,28,28,28,28,28,28,28,0,28,0,28,0,0,0,0,0,0,0,0,28,0,28,0,28,0,0,0,0,28,
+0,28,0,0,28,28,28,0,0,28,0,28,28,28,28,28,28,28,28,28,28,0,28,0,28,0,28,28,0,28,
+0,28,0,0,29,28,0,0,28,28,0,0,0,0,0,0,0,0,0,0,0,0,28,0,28,0,28,0,0,28,
+0,28,0,0,0,28,0,28,0,28,28,28,28,0,0,0,28,28,28,28,28,28,28,0,0,0,28,0,0,28,
+0,28,28,28,0,28,0,0,28,28,28,28,28,28,28,28,28,28,28,28,28,0,28,0,28,0,28,0,0,28,
+0,0,0,0,0,28,28,0,0,0,29,29,0,0,0,0,0,0,0,0,0,0,28,0,28,28,28,28,29,28,
+29,29,0,0,0,28,28,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,0,0,0,0,0,0,28,
+28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,0,0,0,0,0,29,28,28,28
+</data>
+ </layer>
+ <objectgroup id="2" name="Doors">
+  <object id="4" name="Cave" gid="9" x="480" y="259" width="32" height="32">
+   <properties>
+    <property name="goToWorld" value="map-level-00"/>
+    <property name="needStoneCount" value="10"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Items">
+  <object id="26" name="Bonbon" gid="26" x="512.333" y="353" width="32" height="32"/>
+  <object id="27" name="Bonbon" gid="26" x="574.667" y="223.333" width="32" height="32"/>
+  <object id="28" name="Bonbon" gid="26" x="323" y="156" width="32" height="32"/>
+  <object id="29" name="Bonbon" gid="26" x="896" y="157" width="32" height="32"/>
+  <object id="30" name="Bonbon" gid="26" x="383" y="574" width="32" height="32"/>
+  <object id="31" name="Bonbon" gid="26" x="862" y="476" width="32" height="32"/>
+  <object id="32" name="Bonbon" gid="26" x="893" y="608" width="32" height="32"/>
+  <object id="33" name="Bonbon" gid="26" x="386" y="96" width="32" height="32"/>
+  <object id="34" name="Bonbon" gid="26" x="-2" y="255" width="32" height="32"/>
+  <object id="35" name="Bonbon" gid="26" x="61" y="608" width="32" height="32"/>
+  <object id="36" name="Icecream" gid="30" x="479" y="516" width="32" height="32">
+   <properties>
+    <property name="restoreHp" value="30"/>
+   </properties>
+  </object>
+  <object id="37" name="Icecream" gid="30" x="799" y="514" width="32" height="32">
+   <properties>
+    <property name="restoreHp" value="30"/>
+   </properties>
+  </object>
+  <object id="38" name="Icecream" gid="30" x="128" y="288" width="32" height="32">
+   <properties>
+    <property name="restoreHp" value="30"/>
+   </properties>
+  </object>
+  <object id="39" name="Cookie" gid="27" x="671" y="577" width="32" height="32"/>
+  <object id="40" name="Cookie" gid="27" x="32" y="162" width="32" height="32"/>
+  <object id="41" name="Cookie" gid="27" x="738" y="288" width="32" height="32"/>
+  <object id="42" name="Icecream" gid="30" x="864" y="97" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup id="4" name="SpawnPoints">
+  <object id="3" name="SpawnPlayer" x="466.785" y="304.349"/>
+  <object id="6" name="NPC" x="623" y="214">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="9" name="NPC" x="585" y="141">
+   <properties>
+    <property name="skin" value="npc7"/>
+   </properties>
+  </object>
+  <object id="10" name="NPC" x="336" y="337">
+   <properties>
+    <property name="skin" value="npc6"/>
+   </properties>
+  </object>
+  <object id="11" name="NPC" x="685" y="463">
+   <properties>
+    <property name="skin" value="npc6"/>
+   </properties>
+  </object>
+  <object id="12" name="NPC" x="492" y="83">
+   <properties>
+    <property name="skin" value="npc7"/>
+   </properties>
+  </object>
+  <object id="14" name="NPC" x="463" y="495">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="16" name="NPC" x="817" y="112">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="17" name="NPC" x="749" y="397">
+   <properties>
+    <property name="skin" value="npc6"/>
+   </properties>
+  </object>
+  <object id="18" name="NPC" x="885" y="529">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="21" name="NPC" x="243" y="526">
+   <properties>
+    <property name="skin" value="npc6"/>
+   </properties>
+  </object>
+  <object id="22" name="NPC" x="206" y="147">
+   <properties>
+    <property name="skin" value="npc6"/>
+   </properties>
+  </object>
+  <object id="23" name="NPC" x="49" y="270">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="24" name="NPC" x="144" y="367">
+   <properties>
+    <property name="skin" value="npc7"/>
+   </properties>
+  </object>
+  <object id="25" name="NPC" x="142" y="592">
+   <properties>
+    <property name="skin" value="npc3"/>
+   </properties>
+  </object>
+  <object id="44" name="NPC" x="623" y="400">
+   <properties>
+    <property name="skin " value="npc6"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
