@@ -77,6 +77,12 @@
                  "height":0,
                  "id":9,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc2"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -88,6 +94,12 @@
                  "height":0,
                  "id":13,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc2"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -347,6 +359,15 @@
                         }]
                 }, 
                 {
+                 "id":19,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
                  "id":21,
                  "properties":[
                         {
@@ -366,6 +387,33 @@
                 }, 
                 {
                  "id":23,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":25,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":27,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":28,
                  "properties":[
                         {
                          "name":"collides",
