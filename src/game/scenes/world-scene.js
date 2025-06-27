@@ -85,8 +85,26 @@ export default class Base2DScene extends Phaser.Scene {
 
     // Wird verwendet um weitere Spielinformationen an den Entwickler zu geben.
     this.scene.bringToTop("debug-scene")
+
+    this.addText()
   }
 
+  addText() {
+    if (this.mapKey !== "map-level-00") return
+    this.add
+      .text(470, 120, "Du hast es geschafft!")
+      .setOrigin(0.5, 0.5)
+      .setColor("black")
+      .setFontSize("20px")
+      .setFontStyle("bold")
+
+      this.add
+      .text(170, 330, "Glückwunsch!")
+      .setOrigin(0.5, 0.5)
+      .setColor("black")
+      .setFontSize("25px")
+      .setFontStyle("bold")
+  }
   /**
    * Diese Methode lädt die Spielkarte für eine Szene.
    *
