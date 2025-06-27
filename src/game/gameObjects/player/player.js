@@ -12,7 +12,7 @@ import InteractionObject from "../interactionObject"
 export function savePlayerState(scene, player) {
   scene.registry.set("playerState", {
     hp: player.hp,
-    inventory: new Array(6).fill(null),
+    inventory: new Array(10).fill(null),
     keys: player.keys,
   })
 }
@@ -28,7 +28,7 @@ export function loadPlayerState(scene, map) {
   // Spielerstatus aus Registry laden oder Standardwerte setzen
   const savedPlayerState = scene.registry.get("playerState") || {
     hp: 40,
-    inventory: new Array(6).fill(null),
+    inventory: new Array(10).fill(null),
     keys: {},
   }
 
@@ -90,7 +90,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   isAttacking = false
   isInvulnerable = false
   attackSpeed = 1500
-  inventory = new Array(6).fill(null) // Inventar mit 6 Slots initialisieren
+  inventory = new Array(10).fill(null) // Inventar mit 6 Slots initialisieren
   lastDirection = { x: 0, y: 1 } // Default: down
   stoneCount = 0
 
