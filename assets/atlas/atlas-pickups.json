@@ -10,7 +10,7 @@
     },
     {
       "filename": "stone",
-      "frame": { "x": 35, "y": 1, "w": 32, "h": 32 }
+      "frame": { "x": 1, "y": 35, "w": 32, "h": 32 }
     },
     {
       "filename": "ruby",
@@ -39,6 +39,18 @@
     {
       "filename": "seestern",
       "frame": { "x": 103, "y": 69, "w": 32, "h": 32 }
+    },
+    {
+      "filename": "bonbon",
+      "frame": { "x": 35, "y": 137, "w": 32, "h": 32 }
+    },
+    {
+      "filename": "icecream",
+      "frame": { "x": 171, "y": 137, "w": 32, "h": 32 }
+    },
+    {
+      "filename": "cookie",
+      "frame": { "x": 69, "y": 137, "w": 32, "h": 32 }
     }
   ]
 }

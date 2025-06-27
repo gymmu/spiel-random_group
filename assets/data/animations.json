@@ -143,6 +143,206 @@
       "frames": [{ "frame": 9 }, { "frame": 10 }, { "frame": 11 }],
       "frameRate": 10,
       "repeat": -1
+    },
+    {
+      "key": "npc3_idle",
+      "type": "frame",
+      "defaultTextureKey": "npc3",
+      "frames": [{ "frame": 1 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc3_right",
+      "type": "frame",
+      "defaultTextureKey": "npc3",
+      "frames": [{ "frame": 6 }, { "frame": 7 }, { "frame": 8 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc3_left",
+      "type": "frame",
+      "defaultTextureKey": "npc3",
+      "frames": [{ "frame": 3 }, { "frame": 4 }, { "frame": 5 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc3_down",
+      "type": "frame",
+      "defaultTextureKey": "npc3",
+      "frames": [{ "frame": 0 }, { "frame": 1 }, { "frame": 2 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc3_up",
+      "type": "frame",
+      "defaultTextureKey": "npc3",
+      "frames": [{ "frame": 9 }, { "frame": 10 }, { "frame": 11 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc4_idle",
+      "type": "frame",
+      "defaultTextureKey": "npc4",
+      "frames": [{ "frame": 1 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc4_right",
+      "type": "frame",
+      "defaultTextureKey": "npc4",
+      "frames": [{ "frame": 6 }, { "frame": 7 }, { "frame": 8 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc4_left",
+      "type": "frame",
+      "defaultTextureKey": "npc4",
+      "frames": [{ "frame": 3 }, { "frame": 4 }, { "frame": 5 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc4_down",
+      "type": "frame",
+      "defaultTextureKey": "npc4",
+      "frames": [{ "frame": 0 }, { "frame": 1 }, { "frame": 2 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc4_up",
+      "type": "frame",
+      "defaultTextureKey": "npc4",
+      "frames": [{ "frame": 9 }, { "frame": 10 }, { "frame": 11 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc5_idle",
+      "type": "frame",
+      "defaultTextureKey": "npc5",
+      "frames": [{ "frame": 1 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc5_right",
+      "type": "frame",
+      "defaultTextureKey": "npc5",
+      "frames": [{ "frame": 6 }, { "frame": 7 }, { "frame": 8 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc5_left",
+      "type": "frame",
+      "defaultTextureKey": "npc5",
+      "frames": [{ "frame": 3 }, { "frame": 4 }, { "frame": 5 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc5_down",
+      "type": "frame",
+      "defaultTextureKey": "npc5",
+      "frames": [{ "frame": 0 }, { "frame": 1 }, { "frame": 2 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc5_up",
+      "type": "frame",
+      "defaultTextureKey": "npc5",
+      "frames": [{ "frame": 9 }, { "frame": 10 }, { "frame": 11 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc6_idle",
+      "type": "frame",
+      "defaultTextureKey": "npc6",
+      "frames": [{ "frame": 1 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc6_right",
+      "type": "frame",
+      "defaultTextureKey": "npc6",
+      "frames": [{ "frame": 6 }, { "frame": 7 }, { "frame": 8 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc6_left",
+      "type": "frame",
+      "defaultTextureKey": "npc6",
+      "frames": [{ "frame": 3 }, { "frame": 4 }, { "frame": 5 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc6_down",
+      "type": "frame",
+      "defaultTextureKey": "npc6",
+      "frames": [{ "frame": 0 }, { "frame": 1 }, { "frame": 2 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc6_up",
+      "type": "frame",
+      "defaultTextureKey": "npc6",
+      "frames": [{ "frame": 9 }, { "frame": 10 }, { "frame": 11 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc7_idle",
+      "type": "frame",
+      "defaultTextureKey": "npc7",
+      "frames": [{ "frame": 1 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc7_right",
+      "type": "frame",
+      "defaultTextureKey": "npc7",
+      "frames": [{ "frame": 6 }, { "frame": 7 }, { "frame": 8 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc7_left",
+      "type": "frame",
+      "defaultTextureKey": "npc7",
+      "frames": [{ "frame": 3 }, { "frame": 4 }, { "frame": 5 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc7_down",
+      "type": "frame",
+      "defaultTextureKey": "npc7",
+      "frames": [{ "frame": 0 }, { "frame": 1 }, { "frame": 2 }],
+      "frameRate": 10,
+      "repeat": -1
+    },
+    {
+      "key": "npc7_up",
+      "type": "frame",
+      "defaultTextureKey": "npc7",
+      "frames": [{ "frame": 9 }, { "frame": 10 }, { "frame": 11 }],
+      "frameRate": 10,
+      "repeat": -1
     }
   ]
 }
