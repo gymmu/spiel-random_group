@@ -14,13 +14,19 @@ export default class Icecream extends StaticObject {
   }
 
   onCollide(player) {
-    if (player instanceof Player) {
-      player.increaseSpeed(50)
-      this.scene.time.delayedCall(1000, () => {
-        player.resetSpeed()
-      })
-      this.destroy()
+    //super.onCollide(player)
+    player.heal(this.props.healAmount || 15)
+
+    // Wenn die Blume einen Schlüssel hat, geben wir ihn dem Spieler
+    if (this.props.keyName) {
+      player.addKey(this.props.keyName)
     }
+
+    if (this.scene.cameraManager) {
+      this.scene.cameraManager.cameraMaskRadius += 50
+      this.scene.cameraManager.setCameraMask()
+    }
+    this.destroy()
   }
 }
 
