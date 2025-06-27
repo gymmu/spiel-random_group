@@ -372,7 +372,7 @@
                         {
                          "name":"skin",
                          "type":"string",
-                         "value":"npc3"
+                         "value":"npc7"
                         }],
                  "rotation":0,
                  "type":"",
@@ -389,7 +389,7 @@
                         {
                          "name":"skin",
                          "type":"string",
-                         "value":"npc3"
+                         "value":"npc6"
                         }],
                  "rotation":0,
                  "type":"",
@@ -406,7 +406,7 @@
                         {
                          "name":"skin",
                          "type":"string",
-                         "value":"npc3"
+                         "value":"npc6"
                         }],
                  "rotation":0,
                  "type":"",
@@ -423,7 +423,7 @@
                         {
                          "name":"skin",
                          "type":"string",
-                         "value":"npc3"
+                         "value":"npc7"
                         }],
                  "rotation":0,
                  "type":"",
@@ -474,7 +474,7 @@
                         {
                          "name":"skin",
                          "type":"string",
-                         "value":"npc3"
+                         "value":"npc6"
                         }],
                  "rotation":0,
                  "type":"",
@@ -508,7 +508,7 @@
                         {
                          "name":"skin",
                          "type":"string",
-                         "value":"npc3"
+                         "value":"npc6"
                         }],
                  "rotation":0,
                  "type":"",
@@ -525,7 +525,7 @@
                         {
                          "name":"skin",
                          "type":"string",
-                         "value":"npc3"
+                         "value":"npc6"
                         }],
                  "rotation":0,
                  "type":"",
@@ -559,7 +559,7 @@
                         {
                          "name":"skin",
                          "type":"string",
-                         "value":"npc3"
+                         "value":"npc7"
                         }],
                  "rotation":0,
                  "type":"",
